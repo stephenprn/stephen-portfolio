@@ -1,0 +1,54 @@
+$spotlight-size: 600px;
+$spotlight-color: #183D3D;
+$background-color: #0b1c1c;
+
+.base-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+
+    .spotlight-mask {
+        position: fixed;
+        z-index: -1;
+
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background: $background-color;
+
+        &::after {
+            content: '';
+            opacity: 0.2;
+
+            position: fixed;
+
+            height: $spotlight-size;
+            width: $spotlight-size;
+
+            background: radial-gradient(circle closest-side, $spotlight-color, $background-color), url('../../assets/noise.svg');
+            background-repeat: no-repeat;
+
+            left: calc(var(--mouse-x) - $spotlight-size / 2);
+            top: calc(var(--mouse-y) - $spotlight-size / 2);
+        }
+    }
+
+    .base-page {
+        height: 100%;
+        max-width: 1200px;
+        padding: 64px;
+
+        .base-page-content {
+            display: flex;
+            flex-direction: row;
+
+            .base-page-navigation-bar-container {
+                margin-right: 32px;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+$navigation-item-color: #FFFFFF;
+
+.navigation-bar {
+    .navigation-item {
+        color: $navigation-item-color;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        opacity: 0.5;
+
+        font-size: 1.2rem;
+
+        transition: opacity 0.25s ease-in-out;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        .navigation-item-separator {
+            display: block;
+
+            transform-origin: left;
+            transform: scaleX(0.5);
+
+            width: 32px;
+            height: 2px;
+            
+            margin-right: 16px;
+
+            background-color: $navigation-item-color;
+
+            transition: transform 0.25s ease-in-out;
+        }
+
+        &.active, &:hover {
+            opacity: 1;
+
+            .navigation-item-separator {
+               transform: scaleX(1);
+            }
+        }
+    }
+}
