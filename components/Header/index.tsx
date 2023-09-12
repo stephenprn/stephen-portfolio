@@ -20,7 +20,7 @@ const Header: React.FC = () => {
                 <h2 className={classes["sub-title"]}>Développeur fullstack</h2>
             </div>
             <div className={classes["header-right-bottom"]}>
-                <p className={classes.summary}>J'interviens sur vos projets de développement frontend, backend ou les deux.</p>
+                <p className={classes.summary}>J&apos;interviens sur vos projets de développement frontend, backend ou les deux.</p>
             </div>
         </div>
     </header>;
