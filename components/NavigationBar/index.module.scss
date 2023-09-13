@@ -2,8 +2,6 @@ $navigation-item-color: #FFFFFF;
 
 .navigation-bar {
     .navigation-item {
-        color: $navigation-item-color;
-
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -15,7 +13,7 @@ $navigation-item-color: #FFFFFF;
         transition: opacity 0.25s ease-in-out;
 
         &:not(:last-child) {
-            margin-bottom: 8px;
+            margin-bottom: 16px;
         }
 
         .navigation-item-separator {
@@ -32,6 +30,13 @@ $navigation-item-color: #FFFFFF;
             background-color: $navigation-item-color;
 
             transition: transform 0.25s ease-in-out;
+        }
+
+        .navigation-link {
+            font-size: 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $navigation-item-color;
         }
 
         &.active, &:hover {

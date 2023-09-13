@@ -30,10 +30,38 @@
 
         .header-right-top {
             .title {
-                margin-bottom: 16px;
             }
     
             .sub-title {
+                margin-top: 8px;
+            }
+
+            .social-links {
+                display: flex;
+                flex-direction: row;
+
+                list-style-type: none;
+
+                margin-top: 16px;
+
+                .social-item {
+                    opacity: 0.5;
+                    transition: opacity 0.25s ease-in-out;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    &:not(:last-child) {
+                        margin-right: 16px;
+                    }
+
+                    .social-link {
+                        .social-link-icon {
+
+                        }
+                    }
+                }
             }
         }
 

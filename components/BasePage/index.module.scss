@@ -1,6 +1,7 @@
-$spotlight-size: 600px;
-$spotlight-color: #183D3D;
+$spotlight-size: 400px;
+$spotlight-color: #105757;
 $background-color: #0b1c1c;
+$background-color-secondary: #004949;
 
 .base-page-container {
     display: flex;
@@ -18,7 +19,8 @@ $background-color: #0b1c1c;
         bottom: 0;
         left: 0;
 
-        background: $background-color;
+        background-color: $background-color;
+        background-image: linear-gradient(160deg, $background-color 0%, $background-color-secondary 100%), url('../../assets/noise.svg');
 
         &::after {
             content: '';
@@ -29,7 +31,7 @@ $background-color: #0b1c1c;
             height: $spotlight-size;
             width: $spotlight-size;
 
-            background: radial-gradient(circle closest-side, $spotlight-color, $background-color), url('../../assets/noise.svg');
+            background: radial-gradient(circle closest-side, $spotlight-color, transparent);
             background-repeat: no-repeat;
 
             left: calc(var(--mouse-x) - $spotlight-size / 2);
@@ -39,12 +41,15 @@ $background-color: #0b1c1c;
 
     .base-page {
         height: 100%;
+        width: 100%;
         max-width: 1200px;
         padding: 64px;
 
         .base-page-content {
             display: flex;
             flex-direction: row;
+
+            padding: 32px 0;
 
             .base-page-navigation-bar-container {
                 margin-right: 32px;

@@ -1,0 +1,105 @@
+@import '../../../styles/constants.scss';
+
+$time-line-color: #c7cbcb;
+$time-line-width: 2px;
+$time-point-size: 12px;
+
+.experience {
+    position: relative;
+
+    // time line
+
+    &:not(.last) {
+        &::before {
+        content: "";
+
+        width: $time-line-width;
+        background-color: $time-line-color;
+
+        position: absolute;
+        left: calc(-1 * $card-padding);
+        top: calc($card-padding + $h3-font-size / 2);
+        bottom: calc(-16px - $card-padding - $h3-font-size / 2 + $time-point-size / 2 - $time-line-width); // -16px: gap between experiences
+    }
+}
+    // time point
+
+    &::after {
+        content: '';
+
+        height: $time-point-size;
+        width: $time-point-size;
+        border-radius: 50%;
+
+        background-color: $time-line-color;
+
+        position: absolute;
+        top: calc($card-padding + $h3-font-size / 2);
+        left: calc(-1 * $card-padding);
+
+        transform: translate(calc(($time-line-width - $time-point-size) / 2), -50%);
+    }
+
+    .role {
+        margin-bottom: 8px;
+    }
+
+    .location-dates-container {
+        display: flex;
+        flex-direction: row;
+
+        .location-date {
+            opacity: 0.8;
+    
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+    
+            .icon {
+                margin-right: 8px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+        }
+
+        margin-bottom: 16px;
+    }
+
+    .summary-container {
+        opacity: 0.9;
+
+        margin-bottom: 16px;
+
+        .summary-paragraph {
+            &:not(:last-child) {
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .skills {
+        list-style-type: none;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        gap: 8px;
+
+        .skill {
+            padding: 6px 12px;
+            border-radius: 100px;
+
+            background-color: #F6728033;
+
+            .skill-inner {
+                color: #F67280;
+
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
