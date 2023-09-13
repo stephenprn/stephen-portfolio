@@ -36,7 +36,9 @@ const Experience: React.FC<ExperienceProps> = ({
     faded
 }) => {
     return <div className={clsx(classes.experience, {
-        [classes.last]: last
+        [classes.last]: last,
+        [classes.highlighted]: highlighted,
+        [classes.faded]: faded,
     })}> <Card highlighted={highlighted} faded={faded} link={link}>
         <h3 className={classes.title}>
             {link ? <a className="title-link" href={link} target='_blank' rel="noopener noreferrer">{title}</a> : <>{title}</>}
