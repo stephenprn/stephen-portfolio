@@ -14,7 +14,7 @@ const NavigationBar: React.FC = () => {
 
   return (
     <nav className={`${classes["navigation-bar"]} left-part`}>
-      <ul>
+      <ul className={classes["navigation-bar-inner"]}>
         {NAVIGATION_ITEMS.map(({ title, pathname }) => (
           <li
             key={pathname}

@@ -3,50 +3,82 @@
 $navigation-item-color: #ffffff;
 
 .navigation-bar {
-  .navigation-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  .navigation-bar-inner {
+    .navigation-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
 
-    opacity: 0.5;
+      opacity: 0.5;
 
-    font-size: 1.2rem;
+      font-size: 1.2rem;
 
-    transition: opacity 0.25s ease-in-out;
+      transition: opacity 0.25s ease-in-out;
 
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
-
-    .navigation-item-separator {
-      display: block;
-
-      transform-origin: left;
-      transform: scaleX(0.5);
-
-      width: 32px;
-      height: 2px;
-
-      margin-right: 16px;
-
-      background-color: $navigation-item-color;
-
-      transition: transform 0.25s ease-in-out;
-    }
-
-    .navigation-link {
-      font-size: 1rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      color: $navigation-item-color;
-    }
-
-    &.active,
-    &:hover {
-      opacity: 1;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
 
       .navigation-item-separator {
-        transform: scaleX(1);
+        display: block;
+
+        transform-origin: left;
+        transform: scaleX(0.5);
+
+        width: 32px;
+        height: 2px;
+
+        margin-right: 16px;
+
+        background-color: $navigation-item-color;
+
+        transition: transform 0.25s ease-in-out;
+      }
+
+      .navigation-link {
+        font-size: 1rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $navigation-item-color;
+      }
+
+      &.active,
+      &:hover {
+        opacity: 1;
+
+        .navigation-item-separator {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .navigation-bar {
+    margin-bottom: 32px;
+
+    .navigation-bar-inner {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .navigation-item {
+        display: flex;
+        flex-direction: column-reverse;
+
+        &:not(:last-child) {
+          margin-bottom: 0;
+          margin-right: 16px;
+        }
+
+        .navigation-item-separator {
+          margin-top: 4px;
+          transform: scaleX(0);
+
+          transform-origin: center;
+          margin-right: 0;
+        }
       }
     }
   }

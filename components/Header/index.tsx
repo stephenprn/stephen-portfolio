@@ -25,7 +25,7 @@ const Header: React.FC = () => {
         <Image
           className={classes["stephen-image"]}
           src={stephenImage}
-          objectFit="contain"
+          priority={true}
           alt="Photo de Stephen Perrin"
           fill
         />

@@ -29,3 +29,9 @@
     opacity: 0.5;
   }
 }
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .card {
+    padding: $card-padding-mobile;
+  }
+}
