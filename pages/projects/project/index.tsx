@@ -13,6 +13,10 @@ const PROJECT_TYPES_MAP: {
     icon: "android",
     label: "Application Android",
   },
+  web: {
+    icon: "web",
+    label: "Site web",
+  },
 };
 
 export interface IProject {
@@ -20,7 +24,7 @@ export interface IProject {
   description: string[];
   image: StaticImageData;
   link?: string;
-  type?: "android";
+  type?: "android" | "web";
 }
 
 interface ProjectProps extends IProject, CardProps {}
@@ -29,7 +33,9 @@ const Project: React.FC<ProjectProps> = ({ title, description, link, image, high
   return (
     <Card highlighted={highlighted} faded={faded} link={link}>
       <div className={classes["project-inner"]}>
-        <Image src={image} alt={`${title} image`} height={100} />
+        <div className={classes["project-image-container"]}>
+          <Image className={classes["project-image"]} src={image} alt={`${title} image`} fill />
+        </div>
         <div className={classes["project-content"]}>
           <h3>
             {link ? (

@@ -16,6 +16,10 @@ const SOCIAL_ITEMS: { name: IconName; link: string }[] = [
     name: "linkedin",
     link: "https://www.linkedin.com/in/stephen-perrin/",
   },
+  {
+    name: "mail",
+    link: "mailto:stephen.perrin.freelance@gmail.com",
+  },
 ];
 
 const Header: React.FC = () => {
@@ -42,7 +46,7 @@ const Header: React.FC = () => {
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Visiter ${name}`}
+                  aria-label={name}
                 >
                   <Icon className={classes["social-link-icon"]} name={name} color="#ffffff" height={32} width={32} />
                 </a>

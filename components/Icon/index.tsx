@@ -6,6 +6,8 @@ import { LocationIcon } from "./symbol/LocationIcon";
 import { CalendarIcon } from "./symbol/CalendarIcon";
 import { ArrowTopRightIcon } from "./symbol/ArrowTopRightIcon";
 import { AndroidIcon } from "./symbol/AndroidIcon";
+import { MailIcon } from "./symbol/MailIcon";
+import { WebIcon } from "./symbol/WebIcon";
 
 const ICONS = {
   malt: MaltIcon,
@@ -16,6 +18,8 @@ const ICONS = {
   calendar: CalendarIcon,
   arrowTopRight: ArrowTopRightIcon,
   android: AndroidIcon,
+  mail: MailIcon,
+  web: WebIcon,
 };
 
 export type IconName = keyof typeof ICONS;

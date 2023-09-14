@@ -1,3 +1,11 @@
+@import "../../styles/constants.scss";
+
 .projects-paragraphs-group {
   margin-top: 32px;
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .projects-list {
+    gap: 32px;
+  }
 }

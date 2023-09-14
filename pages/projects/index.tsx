@@ -4,9 +4,19 @@ import BasePage from "../../components/BasePage";
 import Project, { IProject } from "./project";
 import optimumImage from "@/assets/projects/optimum.png";
 import objectifsImage from "@/assets/projects/mes_objectifs.png";
+import hoppioImage from "@/assets/projects/hoppio.png";
 import { Icon } from "@/components/Icon";
 
 const PROJECTS: IProject[] = [
+  {
+    title: "Hoppio",
+    description: [
+      "Plateforme permettant de trouver des destinations en fonction des envies de l'utilisateur (par exemple le thème : vélo, montagne, culture, plage,…) accessibles en train.",
+    ],
+    link: "https://hoppio.fr/",
+    type: "web",
+    image: hoppioImage,
+  },
   {
     title: "Optimum",
     description: ["Application permettant de suivre ses habitudes et créer des routines au quotidien."],
@@ -29,7 +39,7 @@ const Projects: React.FC = () => {
   return (
     <BasePage>
       <div>
-        <div className="cards-list">
+        <div className={`${classes["projects-list"]} cards-list`}>
           {PROJECTS.map((project, index) => (
             <div
               className="project-container"
