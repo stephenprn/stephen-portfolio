@@ -11,7 +11,7 @@ export interface CardProps {
 const Card: React.FC<CardProps> = ({ link, highlighted, faded, children }) => {
   return (
     <div
-      className={clsx(classes.card, {
+      className={clsx(`${classes.card} card`, {
         [classes.clickable]: !!link,
         [classes.highlighted]: highlighted,
         [classes.faded]: faded,

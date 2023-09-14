@@ -21,14 +21,13 @@ const SOCIAL_ITEMS: { name: IconName; link: string }[] = [
 const Header: React.FC = () => {
   return (
     <header className={classes.header}>
-      <div className={classes["header-left"]}>
+      <div className={`${classes["header-left"]} left-part`}>
         <Image
           className={classes["stephen-image"]}
           src={stephenImage}
           objectFit="contain"
           alt="Photo de Stephen Perrin"
-          height={200}
-          width={200}
+          fill
         />
       </div>
       <div className={classes["header-right"]}>

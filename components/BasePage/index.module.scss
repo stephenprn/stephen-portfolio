@@ -3,6 +3,18 @@ $spotlight-color: #105757;
 $background-color: #0b1c1c;
 $background-color-secondary: #004949;
 
+@keyframes appears-slide {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .base-page-container {
   display: flex;
   align-items: center;
@@ -46,14 +58,17 @@ $background-color-secondary: #004949;
     max-width: 1200px;
     padding: 64px;
 
-    .base-page-content {
+    .base-page-main {
       display: flex;
       flex-direction: row;
 
       padding: 32px 0;
 
       .base-page-navigation-bar-container {
-        margin-right: 32px;
+      }
+
+      .base-page-content {
+        animation: appears-slide 0.25s ease-in-out;
       }
     }
   }

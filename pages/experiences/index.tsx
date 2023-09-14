@@ -132,7 +132,7 @@ const Experiences: React.FC = () => {
 
   return (
     <BasePage>
-      <div className="cards-list">
+      <div className={`${classes["experiences-container"]} cards-list`}>
         {EXPERIENCES.map((experience, index) => (
           <div
             key={index}

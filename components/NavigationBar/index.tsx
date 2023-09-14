@@ -13,7 +13,7 @@ const NavigationBar: React.FC = () => {
   const currentPathname = usePathname();
 
   return (
-    <nav className={classes["navigation-bar"]}>
+    <nav className={`${classes["navigation-bar"]} left-part`}>
       <ul>
         {NAVIGATION_ITEMS.map(({ title, pathname }) => (
           <li

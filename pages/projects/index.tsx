@@ -4,6 +4,7 @@ import BasePage from "../../components/BasePage";
 import Project, { IProject } from "./project";
 import optimumImage from "@/assets/projects/optimum.png";
 import objectifsImage from "@/assets/projects/mes_objectifs.png";
+import { Icon } from "@/components/Icon";
 
 const PROJECTS: IProject[] = [
   {
@@ -27,21 +28,32 @@ const Projects: React.FC = () => {
 
   return (
     <BasePage>
-      <div className="cards-list">
-        {PROJECTS.map((project, index) => (
-          <div
-            className="project-container"
-            onMouseEnter={() => setIndexHighlighted(index)}
-            onMouseLeave={() => setIndexHighlighted(null)}
-            key={index}
-          >
-            <Project
-              highlighted={index === indexHighlighted}
-              faded={indexHighlighted !== null && index !== indexHighlighted}
-              {...project}
-            />
-          </div>
-        ))}
+      <div>
+        <div className="cards-list">
+          {PROJECTS.map((project, index) => (
+            <div
+              className="project-container"
+              onMouseEnter={() => setIndexHighlighted(index)}
+              onMouseLeave={() => setIndexHighlighted(null)}
+              key={index}
+            >
+              <Project
+                highlighted={index === indexHighlighted}
+                faded={indexHighlighted !== null && index !== indexHighlighted}
+                {...project}
+              />
+            </div>
+          ))}
+        </div>
+
+        <div className={`${classes["projects-paragraphs-group"]} paragraphs-group`}>
+          <p>
+            Le code source de certains de mes projets est disponible sur mon{" "}
+            <a className="link" href="https://github.com/stephenprn" target="_blank" rel="noopener noreferrer">
+              GitHub <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
+            </a>
+          </p>
+        </div>
       </div>
     </BasePage>
   );

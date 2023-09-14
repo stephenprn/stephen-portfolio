@@ -37,11 +37,12 @@ const BasePage: React.FC<BasePageProps> = ({ children }) => {
       <div className={classes["spotlight-mask"]} ref={maskRef}></div>
       <div className={classes["base-page"]}>
         <BasePageHeader />
-        <main className={classes["base-page-content"]}>
+        <main className={classes["base-page-main"]}>
           <div className={classes["base-page-navigation-bar-container"]}>
             <NavigationBar />
           </div>
-          {children}
+
+          <div className={classes["base-page-content"]}>{children}</div>
         </main>
       </div>
     </div>

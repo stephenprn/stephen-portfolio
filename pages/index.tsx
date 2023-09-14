@@ -6,12 +6,12 @@ import { Icon } from "@/components/Icon";
 const Home: React.FC = () => {
   return (
     <BasePage>
-      <div className={classes["presentation-container"]}>
-        <p className={classes["presentation-paragraph"]}>
+      <div className="paragraphs-group">
+        <p>
           Je suis développeur web <b>full stack</b> depuis 6 ans maintenant. Je suis spécialisé sur les technologies{" "}
           <b>React / React native / Angular</b> pour le front et <b>Python / Node</b> pour le back.
         </p>
-        <p className={classes["presentation-paragraph"]}>
+        <p>
           Je peux intervenir sur différents type de projets, plus ou moins complexes car j&apos;ai eu l&apos;occasion de
           travailler sur des projets très variés dans des start-up de différentes tailles. J&apos;ai également développé
           des applications mobiles en tant que projets personnels disponibles{" "}
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
           </Link>
           .
         </p>
-        <p className={classes["presentation-paragraph"]}>
+        <p>
           Le dernier projet sur lequel j&apos;ai travaillé est la plateforme <b>Hoppio</b> où j&apos;ai pris en charge
           toute la partie technique (développement frontend, backend, infrastructure,...) disponible{" "}
           <a className="link" href="https://hoppio.fr/" target="_blank" rel="noopener noreferrer">
@@ -28,7 +28,7 @@ const Home: React.FC = () => {
           </a>
           .
         </p>
-        <p className={classes["presentation-paragraph"]}>
+        <p>
           J&apos;accorde une grande importance à faire du <b>clean code</b> qui permet une bonne maintenabilité et
           surtout une expérience qui soit la meilleure possible pour l&apos;utilisateur final.
         </p>
