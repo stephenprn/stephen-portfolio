@@ -1,34 +1,33 @@
-import clsx from 'clsx';
-import classes from './index.module.scss';
-
+import clsx from "clsx";
+import classes from "./index.module.scss";
 
 export interface CardProps {
-    link?: string;
-    highlighted: boolean;
-    faded: boolean;
-    children?: React.ReactNode;
+  link?: string;
+  highlighted: boolean;
+  faded: boolean;
+  children?: React.ReactNode;
 }
 
-const Card: React.FC<CardProps> = ({
-    link,
-    highlighted,
-    faded,
-    children
-}) => {
-    return <div className={clsx(classes.card, {
+const Card: React.FC<CardProps> = ({ link, highlighted, faded, children }) => {
+  return (
+    <div
+      className={clsx(classes.card, {
         [classes.clickable]: !!link,
         [classes.highlighted]: highlighted,
         [classes.faded]: faded,
-    })} onClick={(event) => {
+      })}
+      onClick={(event) => {
         if (!link) {
-            return;
+          return;
         }
 
-        window.open(link, '_blank', 'noopener noreferrer');
+        window.open(link, "_blank", "noopener noreferrer");
         event.stopPropagation();
-    }}>
-        {children}
+      }}
+    >
+      {children}
     </div>
+  );
 };
 
 export default Card;

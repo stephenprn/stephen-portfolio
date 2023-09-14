@@ -4,56 +4,57 @@ $background-color: #0b1c1c;
 $background-color-secondary: #004949;
 
 .base-page-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  height: 100%;
+
+  .spotlight-mask {
+    position: fixed;
+    z-index: -1;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: $background-color;
+    background-image: linear-gradient(160deg, $background-color 0%, $background-color-secondary 100%),
+      url("../../assets/noise.svg");
+
+    &::after {
+      content: "";
+      opacity: 0.2;
+
+      position: fixed;
+
+      height: $spotlight-size;
+      width: $spotlight-size;
+
+      background: radial-gradient(circle closest-side, $spotlight-color, transparent);
+      background-repeat: no-repeat;
+
+      left: calc(var(--mouse-x) - $spotlight-size / 2);
+      top: calc(var(--mouse-y) - $spotlight-size / 2);
+    }
+  }
+
+  .base-page {
     height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    padding: 64px;
 
-    .spotlight-mask {
-        position: fixed;
-        z-index: -1;
+    .base-page-content {
+      display: flex;
+      flex-direction: row;
 
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+      padding: 32px 0;
 
-        background-color: $background-color;
-        background-image: linear-gradient(160deg, $background-color 0%, $background-color-secondary 100%), url('../../assets/noise.svg');
-
-        &::after {
-            content: '';
-            opacity: 0.2;
-
-            position: fixed;
-
-            height: $spotlight-size;
-            width: $spotlight-size;
-
-            background: radial-gradient(circle closest-side, $spotlight-color, transparent);
-            background-repeat: no-repeat;
-
-            left: calc(var(--mouse-x) - $spotlight-size / 2);
-            top: calc(var(--mouse-y) - $spotlight-size / 2);
-        }
+      .base-page-navigation-bar-container {
+        margin-right: 32px;
+      }
     }
-
-    .base-page {
-        height: 100%;
-        width: 100%;
-        max-width: 1200px;
-        padding: 64px;
-
-        .base-page-content {
-            display: flex;
-            flex-direction: row;
-
-            padding: 32px 0;
-
-            .base-page-navigation-bar-container {
-                margin-right: 32px;
-            }
-        }
-    }
+  }
 }

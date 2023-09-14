@@ -1,33 +1,31 @@
-@import '../../styles/constants.scss';
-
+@import "../../styles/constants.scss";
 
 .card {
-    padding: $card-padding;
-    border: 1px solid rgba(255, 255, 255, 0);
+  padding: $card-padding;
+  border: 1px solid rgba(255, 255, 255, 0);
 
-    transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 
+  &.clickable {
+    cursor: pointer;
+  }
 
-    &.clickable {
-        cursor: pointer;
+  &.highlighted {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    border-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+
+    h3 {
+      color: #f67280;
     }
+  }
 
-    &.highlighted {
-        background: rgba(255, 255, 255, 0.1);
-        box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
-
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-
-        border-color: rgba(255, 255, 255, 0.2);
-        border-radius: 8px;
-
-        h3 {
-            color: #F67280;
-        }
-    }
-
-    &.faded {
-        opacity: 0.5;
-    }
+  &.faded {
+    opacity: 0.5;
+  }
 }

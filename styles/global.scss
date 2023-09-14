@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;500&family=Noto+Serif:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
-@import './constants.scss';
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;500&family=Noto+Serif:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
+@import "./constants.scss";
 
 body,
 html,
@@ -15,7 +15,7 @@ html,
   box-sizing: border-box;
 
   color: #ffffff;
-  font-family: 'League Spartan';
+  font-family: "League Spartan";
   font-weight: 300;
 }
 
@@ -33,7 +33,7 @@ p {
 }
 
 h1 {
-  font-family: 'Noto Serif';
+  font-family: "Noto Serif";
   font-weight: 700;
 }
 
@@ -47,6 +47,34 @@ h3 {
 
   .title-link {
     font-weight: 500;
+  }
+}
+
+.link {
+  font-weight: 500;
+  color: #ffffff;
+
+  transition: color 0.25s ease-in-out;
+
+  path {
+    transition: fill 0.25s ease-in-out;
+  }
+
+  .link-icon {
+    transition: transform 0.25s ease-in-out;
+    transform: translate(-25%, 25%) scale(1);
+  }
+
+  &:hover {
+    color: #f67280;
+
+    path {
+      fill: #f67280;
+    }
+
+    .link-icon {
+      transform: translate(0, 0) scale(1.1);
+    }
   }
 }
 
