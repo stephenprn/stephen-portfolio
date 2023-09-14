@@ -37,7 +37,13 @@ const Header: React.FC = () => {
           <ul className={classes["social-links"]}>
             {SOCIAL_ITEMS.map(({ name, link }) => (
               <li className={classes["social-item"]} key={name}>
-                <a className={classes["social-link"]} href={link} target="_blank" rel="noopener noreferrer">
+                <a
+                  className={classes["social-link"]}
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visiter ${name}`}
+                >
                   <Icon className={classes["social-link-icon"]} name={name} color="#ffffff" height={32} width={32} />
                 </a>
               </li>
