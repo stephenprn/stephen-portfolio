@@ -41,7 +41,7 @@ $header-image-border-width: 8px;
       .social-links {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: start;
 
         list-style-type: none;
 
@@ -94,6 +94,12 @@ $header-image-border-width: 8px;
 
       .header-right-bottom {
         margin-top: 16px;
+      }
+
+      .header-right-top {
+        .social-links {
+          justify-content: center;
+        }
       }
     }
   }
