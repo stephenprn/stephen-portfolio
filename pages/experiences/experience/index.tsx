@@ -43,11 +43,17 @@ const Experience: React.FC<ExperienceProps> = ({
         [classes.faded]: faded,
       })}
     >
-      {" "}
       <Card highlighted={highlighted} faded={faded} link={link}>
         <h3 className={classes.title}>
           {link ? (
-            <a className="link" href={link} target="_blank" rel="noopener noreferrer">
+            <a
+              className={clsx("link", {
+                active: highlighted,
+              })}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {title} <Icon className="link-icon" name="arrowTopRight" height="1.2rem" width="1.2rem" />
             </a>
           ) : (

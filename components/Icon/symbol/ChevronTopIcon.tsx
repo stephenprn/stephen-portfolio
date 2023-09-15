@@ -5,13 +5,10 @@ const SvgComponent = ({ width = 24, height = 24, color = "#ffffff", ...props }: 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={width} height={height} {...props}>
       <path
         fill={color}
-        d="M20 3.25H4A2.753 2.753 0 0 0 1.25 6l10 7.5a1.258 1.258 0 0 0 1.5 0l10-7.5A2.753 2.753 0 0 0 20 3.25Z"
-      />
-      <path
-        fill={color}
-        d="m22.75 7.875-9.1 6.825a2.767 2.767 0 0 1-3.3 0l-9.1-6.825V18A2.753 2.753 0 0 0 4 20.75h16A2.753 2.753 0 0 0 22.75 18Z"
+        fillRule="nonzero"
+        d="M12 10.413 5.705 16.69a1 1 0 0 1-1.412-1.416l7-6.981a1 1 0 0 1 1.413 0l7 7a1 1 0 1 1-1.414 1.415l-6.294-6.294Z"
       />
     </svg>
   );
 };
-export { SvgComponent as MailIcon };
+export { SvgComponent as ChevronTopIcon };

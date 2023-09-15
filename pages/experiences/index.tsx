@@ -2,6 +2,8 @@ import { useState } from "react";
 import BasePage from "../../components/BasePage";
 import classes from "./index.module.scss";
 import Experience, { IExperience } from "./experience";
+import CardsContainer from "@/components/CardsContainer";
+import { CARD_CONTAINER_CLASSNAME } from "../../constants";
 
 const EXPERIENCES: IExperience[] = [
   {
@@ -132,27 +134,29 @@ const Experiences: React.FC = () => {
 
   return (
     <BasePage>
-      <div className={`${classes["experiences-container"]} cards-list`}>
-        {EXPERIENCES.map((experience, index) => (
-          <div
-            key={index}
-            className={classes["experience-container"]}
-            onMouseEnter={() => {
-              setIndexHighlighted(index);
-            }}
-            onMouseLeave={() => {
-              setIndexHighlighted(null);
-            }}
-          >
-            {" "}
-            <Experience
-              {...experience}
-              last={index === EXPERIENCES.length - 1}
-              highlighted={index === indexHighlighted}
-              faded={indexHighlighted !== null && index !== indexHighlighted}
-            />
-          </div>
-        ))}
+      <div className={classes.experiences}>
+        <CardsContainer setIndexHighlighted={setIndexHighlighted}>
+          {EXPERIENCES.map((experience, index) => (
+            <div
+              key={index}
+              className={CARD_CONTAINER_CLASSNAME}
+              data-index={index}
+              onMouseEnter={() => {
+                setIndexHighlighted(index);
+              }}
+              onMouseLeave={() => {
+                setIndexHighlighted(null);
+              }}
+            >
+              <Experience
+                {...experience}
+                last={index === EXPERIENCES.length - 1}
+                highlighted={index === indexHighlighted}
+                faded={indexHighlighted !== null && index !== indexHighlighted}
+              />
+            </div>
+          ))}
+        </CardsContainer>
       </div>
     </BasePage>
   );

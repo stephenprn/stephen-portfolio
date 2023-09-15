@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import classes from "./index.module.scss";
 import BasePageHeader from "../Header";
 import NavigationBar from "../NavigationBar";
+import Footer from "../Footer";
+import { TABLET_BREAKPOINT } from "@/constants";
 
 interface BasePageProps {
   children: React.ReactNode;
@@ -11,6 +13,10 @@ const BasePage: React.FC<BasePageProps> = ({ children }) => {
   const maskRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    if (window.screen.width <= TABLET_BREAKPOINT) {
+      return;
+    }
+
     const handlePointerMove = (event: PointerEvent) => {
       if (!maskRef?.current) {
         return;
@@ -42,7 +48,12 @@ const BasePage: React.FC<BasePageProps> = ({ children }) => {
             <NavigationBar />
           </div>
 
-          <div className={classes["base-page-content"]}>{children}</div>
+          <div className={classes["base-page-content"]}>
+            {children}
+            <div className={classes["base-page-content-footer-container"]}>
+              <Footer />
+            </div>
+          </div>
         </main>
       </div>
     </div>

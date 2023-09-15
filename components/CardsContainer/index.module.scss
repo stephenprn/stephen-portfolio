@@ -1,0 +1,12 @@
+@import "../../styles/constants.scss";
+
+.cards-container {
+  margin-left: $card-padding;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  position: relative;
+}

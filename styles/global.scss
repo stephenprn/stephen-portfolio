@@ -4,11 +4,9 @@
 
 // base elements
 
-body,
 html,
-#__next {
-  height: 100%;
-  width: 100%;
+body {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -79,7 +77,8 @@ h3 {
 }
 
 .link:hover,
-.card:hover .link {
+.card:hover .link,
+.link.active {
   color: #f67280;
 
   path {
@@ -92,15 +91,6 @@ h3 {
 }
 
 // layouts
-
-.cards-list {
-  display: flex;
-  flex-direction: column;
-
-  gap: 16px;
-
-  position: relative;
-}
 
 .left-part {
   width: 220px;

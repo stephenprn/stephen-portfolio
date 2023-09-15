@@ -6,6 +6,8 @@ import optimumImage from "@/assets/projects/optimum.png";
 import objectifsImage from "@/assets/projects/mes_objectifs.png";
 import hoppioImage from "@/assets/projects/hoppio.png";
 import { Icon } from "@/components/Icon";
+import CardsContainer from "@/components/CardsContainer";
+import { CARD_CONTAINER_CLASSNAME } from "../../constants";
 
 const PROJECTS: IProject[] = [
   {
@@ -39,10 +41,11 @@ const Projects: React.FC = () => {
   return (
     <BasePage>
       <div>
-        <div className={`${classes["projects-list"]} cards-list`}>
+        <CardsContainer setIndexHighlighted={setIndexHighlighted}>
           {PROJECTS.map((project, index) => (
             <div
-              className="project-container"
+              className={CARD_CONTAINER_CLASSNAME}
+              data-index={index}
               onMouseEnter={() => setIndexHighlighted(index)}
               onMouseLeave={() => setIndexHighlighted(null)}
               key={index}
@@ -54,7 +57,7 @@ const Projects: React.FC = () => {
               />
             </div>
           ))}
-        </div>
+        </CardsContainer>
 
         <div className={`${classes["projects-paragraphs-group"]} paragraphs-group`}>
           <p>

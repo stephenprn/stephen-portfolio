@@ -1,0 +1,43 @@
+@import "../../styles/constants.scss";
+
+.footer {
+  position: relative;
+
+  padding: 32px 0;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    height: 1px;
+
+    top: 0;
+    left: 64px;
+    right: 64px;
+
+    background-color: #ffffff44;
+  }
+
+  .scroll-top-link {
+    margin-top: 64px;
+
+    opacity: 0.8;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scroll-top-paragraph {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .footer {
+    .scroll-top-paragraph {
+      display: block;
+    }
+  }
+}

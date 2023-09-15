@@ -8,6 +8,7 @@ import { ArrowTopRightIcon } from "./symbol/ArrowTopRightIcon";
 import { AndroidIcon } from "./symbol/AndroidIcon";
 import { MailIcon } from "./symbol/MailIcon";
 import { WebIcon } from "./symbol/WebIcon";
+import { ChevronTopIcon } from "./symbol/ChevronTopIcon";
 
 const ICONS = {
   malt: MaltIcon,
@@ -20,6 +21,7 @@ const ICONS = {
   android: AndroidIcon,
   mail: MailIcon,
   web: WebIcon,
+  chevronTop: ChevronTopIcon,
 };
 
 export type IconName = keyof typeof ICONS;
