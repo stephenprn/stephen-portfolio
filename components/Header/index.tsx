@@ -37,7 +37,7 @@ const Header: React.FC = () => {
       <div className={classes["header-right"]}>
         <div className={classes["header-right-top"]}>
           <h1 className={classes.title}>Stephen Perrin</h1>
-          <h2 className={classes["sub-title"]}>Développeur fullstack (membre premium du chupillos club)</h2>
+          <h2 className={classes["sub-title"]}>Développeur fullstack</h2>
           <ul className={classes["social-links"]}>
             {SOCIAL_ITEMS.map(({ name, link }) => (
               <li className={classes["social-item"]} key={name}>
