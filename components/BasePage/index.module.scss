@@ -48,8 +48,8 @@ $background-color-secondary: #004949;
       background: radial-gradient(circle closest-side, $spotlight-color, transparent);
       background-repeat: no-repeat;
 
-      left: calc(var(--mouse-x) - $spotlight-size / 2);
-      top: calc(var(--mouse-y) - $spotlight-size / 2);
+      left: calc(var(--mouse-x, -100%) - $spotlight-size / 2);
+      top: calc(var(--mouse-y, -100%) - $spotlight-size / 2);
     }
   }
 

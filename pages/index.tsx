@@ -8,23 +8,23 @@ const Home: React.FC = () => {
     <BasePage>
       <div className="paragraphs-group">
         <p>
-          Je suis développeur web <b>full stack</b> depuis 6 ans maintenant. Je suis spécialisé sur les technologies{" "}
+          Je suis développeur web <b>fullstack</b> depuis 6 ans maintenant. Je suis spécialisé sur les technologies{" "}
           <b>React / React native / Angular</b> pour le front et <b>Python / Node</b> pour le back.
         </p>
         <p>
           Je peux intervenir sur différents type de projets, plus ou moins complexes car j&apos;ai eu l&apos;occasion de
           travailler sur des projets très variés dans des start-up de différentes tailles. J&apos;ai également développé
-          des applications mobiles en tant que projets personnels disponibles{" "}
+          des applications mobiles en tant que projets personnels{" "}
           <Link className="link" href="/projects">
-            ici <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
+            disponibles ici <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
           </Link>
           .
         </p>
         <p>
           Le dernier projet sur lequel j&apos;ai travaillé est la plateforme <b>Hoppio</b> où j&apos;ai pris en charge
-          toute la partie technique (développement frontend, backend, infrastructure,...) disponible{" "}
+          toute la partie technique (développement frontend, backend, infrastructure,...){" "}
           <a className="link" href="https://hoppio.fr/" target="_blank" rel="noopener noreferrer">
-            ici <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
+            disponible ici <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
           </a>
           .
         </p>

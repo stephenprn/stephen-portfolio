@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer className={classes.footer}>
-      <div className="paragraphs-group">
+      <div className={`${classes["footer-paragraphs-group"]} paragraphs-group`}>
         <p>
           Ce portfolio a été réalisé en{" "}
           <a className="link" href="https://react.dev/" target="_blank" rel="noopener noreferrer">
