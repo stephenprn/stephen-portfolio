@@ -2,6 +2,7 @@ import { Icon, IconName } from "@/components/Icon";
 import classes from "./index.module.scss";
 import Card, { CardProps } from "@/components/Card";
 import Image, { StaticImageData } from "next/image";
+import clsx from "clsx";
 
 const PROJECT_TYPES_MAP: {
   [key: string]: {
@@ -39,7 +40,14 @@ const Project: React.FC<ProjectProps> = ({ title, description, link, image, high
         <div className={classes["project-content"]}>
           <h3>
             {link ? (
-              <a className="link" href={link} target="_blank" rel="noopener noreferrer">
+              <a
+                className={clsx("link", {
+                  active: highlighted,
+                })}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {title} <Icon className="link-icon" name="arrowTopRight" height="1.2rem" width="1.2rem" />
               </a>
             ) : (
