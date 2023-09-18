@@ -15,17 +15,17 @@ const Home: React.FC = () => {
           travailler pour des start-ups en France ainsi que pour des clients à l&apos;international. 
         </p>
         <p>
-          En tant que projets personnels, j'ai également développé et lancé deux applications mobiles
+          En tant que projets personnels, j&apos;ai également développé et lancé deux applications mobiles
           <Link className="link" href="/projects">
             disponibles ici <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
           </Link>
           .
         </p>
         <p>
-          En 2023, j'ai décidé de me lancer dans l'entrepreunariat. Avec mon associée, nous avons lancé le plateforme{" "}
+          En 2023, j&apos;ai décidé de me lancer dans l&apos;entrepreunariat. Avec mon associée, nous avons lancé le plateforme{" "}
           <a className="link" href="https://hoppio.fr/" target="_blank" rel="noopener noreferrer">
             Hoppio <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
-          </a>. Sur ce projet, je prends en charge le développement front-end, back-end et la gestion de l'infrastructure.
+          </a>. Sur ce projet, je prends en charge le développement front-end, back-end et la gestion de l&apos;infrastructure.
         </p>
         <p>
           J&apos;accorde une grande importance au <b>clean code</b> qui permet une bonne maintenabilité et
