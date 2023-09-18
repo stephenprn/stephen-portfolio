@@ -56,7 +56,7 @@ const Header: React.FC = () => {
         </div>
         <div className={classes["header-right-bottom"]}>
           <p className={classes.summary}>
-            J&apos;interviens sur vos projets de développement frontend, backend ou les deux.
+            En tant que software engineer, j'interviens sur des projets back-end et front-end depuis 6 ans.
           </p>
         </div>
       </div>

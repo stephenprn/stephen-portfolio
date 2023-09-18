@@ -13,7 +13,7 @@ const EXPERIENCES: IExperience[] = [
     location: "Paris, France",
     summary: [
       "Creation d'une plateforme qui permet de trouver des destinations en fonction des envies de l'utilisateur (par exemple le thème : vélo, montagne, culture, plage,...) accessibles en train.",
-      "Je prends en charge toute la partie technique du projet : développement backend, frontend, infrastructure,...",
+      "Je prends en charge toute la partie technique du projet : développement back-end, front-end, infrastructure,...",
     ],
     skills: [
       "React.js",
@@ -70,7 +70,7 @@ const EXPERIENCES: IExperience[] = [
     location: "Londres, Royaume-Uni",
     summary: [
       "Développement d'un moteur de recherche de l'innovation from scratch.",
-      "Prise en charge de toute la partie technique : développement backend, frontend, infrastructure,...",
+      "Prise en charge de toute la partie technique : développement back-end, front-end, infrastructure,...",
     ],
     skills: [
       "Angular",

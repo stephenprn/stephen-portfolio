@@ -8,29 +8,28 @@ const Home: React.FC = () => {
     <BasePage>
       <div className="paragraphs-group">
         <p>
-          Je suis développeur web <b>fullstack</b> depuis 6 ans maintenant. Je suis spécialisé sur les technologies{" "}
-          <b>React / React native / Angular</b> pour le front et <b>Python / Node</b> pour le back.
+          Spécialisé sur les technologies <b>React / React native / Angular</b> en front-end et <b>Python / Node</b> en back-end.
         </p>
         <p>
-          Je peux intervenir sur différents type de projets, plus ou moins complexes car j&apos;ai eu l&apos;occasion de
-          travailler sur des projets très variés dans des start-up de différentes tailles. J&apos;ai également développé
-          des applications mobiles en tant que projets personnels{" "}
+          Je peux intervenir sur des projets de différents typologies, tailles et durées. J&apos;ai eu l&apos;occasion de
+          travailler pour des start-ups en France ainsi que pour des clients à l&apos;international. 
+        </p>
+        <p>
+          En tant que projets personnels, j'ai également développé et lancé deux applications mobiles
           <Link className="link" href="/projects">
             disponibles ici <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
           </Link>
           .
         </p>
         <p>
-          Le dernier projet sur lequel j&apos;ai travaillé est la plateforme <b>Hoppio</b> où j&apos;ai pris en charge
-          toute la partie technique (développement frontend, backend, infrastructure,...){" "}
+          En 2023, j'ai décidé de me lancer dans l'entrepreunariat. Avec mon associée, nous avons lancé le plateforme{" "}
           <a className="link" href="https://hoppio.fr/" target="_blank" rel="noopener noreferrer">
-            disponible ici <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
-          </a>
-          .
+            Hoppio <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
+          </a>. Sur ce projet, je prends en charge le développement front-end, back-end et la gestion de l'infrastructure.
         </p>
         <p>
-          J&apos;accorde une grande importance à faire du <b>clean code</b> qui permet une bonne maintenabilité et
-          surtout une expérience qui soit la meilleure possible pour l&apos;utilisateur final.
+          J&apos;accorde une grande importance au <b>clean code</b> qui permet une bonne maintenabilité et
+          surtout une expérience optimale pour l&apos;utilisateur final.
         </p>
       </div>
     </BasePage>
