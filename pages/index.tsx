@@ -8,7 +8,7 @@ const Home: React.FC = () => {
     <BasePage>
       <div className="paragraphs-group">
         <p>
-        Depuis 6 ans, j&apos;interviens sur des projets back-end et front-end en tant que <b>software engineer</b>.
+        Depuis 6 ans, je travaille sur des projets back-end et front-end en tant que <b>software engineer</b>.
         </p>
         <p>
           Je peux intervenir sur des projets de différents typologies, tailles et durées. J&apos;ai eu l&apos;occasion de

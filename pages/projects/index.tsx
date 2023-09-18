@@ -14,7 +14,7 @@ const PROJECTS: IProject[] = [
     title: "Hoppio",
     description: [
       "Plateforme inspirationnelle pour trouver des destinations accessibles en train partout en France.",
-      "Hoppio propose des itinéraires en fonction de vos envies (vélo, montagne, culture, plage,...).",
+      "Hoppio vous propose des itinéraires en fonction de vos envies (vélo, montagne, culture, plage,...).",
     ],
     link: "https://hoppio.fr/",
     type: "web",
@@ -32,7 +32,7 @@ const PROJECTS: IProject[] = [
   },
   {
     title: "Mes objectifs",
-    description: ["Application mobile style \"to-do list\" pour le suivi d'objectifs quotidien."],
+    description: ["Application mobile style \"to-do list\" pour le suivi de vos objectifs au quotidien."],
     link: "https://play.google.com/store/apps/details?id=com.stephenprn.objectifs&hl=fr",
     type: "android",
     image: objectifsImage,
