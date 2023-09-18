@@ -37,7 +37,7 @@ const Header: React.FC = () => {
       <div className={classes["header-right"]}>
         <div className={classes["header-right-top"]}>
           <h1 className={classes.title}>Stephen Perrin</h1>
-          <h2 className={classes["sub-title"]}>Développeur fullstack</h2>
+          <h2 className={classes["sub-title"]}>Développeur full-stack</h2>
           <ul className={classes["social-links"]}>
             {SOCIAL_ITEMS.map(({ name, link }) => (
               <li className={classes["social-item"]} key={name}>
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
         </div>
         <div className={classes["header-right-bottom"]}>
           <p className={classes.summary}>
-            En tant que software engineer, j&apos;interviens sur des projets back-end et front-end depuis 6 ans.
+            Spécialisé sur les technologies <b>React / React native / Angular</b> en front-end et <b>Python / Node</b> en back-end.
           </p>
         </div>
       </div>

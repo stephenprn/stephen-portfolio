@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { usePathname } from "next/navigation";
 
 const NAVIGATION_ITEMS = [
-  { title: "A propos", pathname: "/" },
+  { title: "À propos", pathname: "/" },
   { title: "Experiences", pathname: "/experiences" },
   { title: "Projets", pathname: "/projects" },
 ] as const;

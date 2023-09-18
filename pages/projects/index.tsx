@@ -13,7 +13,8 @@ const PROJECTS: IProject[] = [
   {
     title: "Hoppio",
     description: [
-      "Plateforme permettant de trouver des destinations en fonction des envies de l'utilisateur (par exemple le thème : vélo, montagne, culture, plage,…) accessibles en train.",
+      "Plateforme inspirationnelle pour trouver des destinations accessibles en train partout en France.",
+      "Hoppio propose des itinéraires en fonction de vos envies (vélo, montagne, culture, plage,...).",
     ],
     link: "https://hoppio.fr/",
     type: "web",
@@ -21,14 +22,17 @@ const PROJECTS: IProject[] = [
   },
   {
     title: "Optimum",
-    description: ["Application permettant de suivre ses habitudes et créer des routines au quotidien."],
+    description: [
+      "Application mobile permettant de monitorer vos habitudes au quotidien de manière personnalisée.",
+      "Création de nouvelles routines saines afin de réduire vos mauvaises habitudes."
+    ],
     link: "https://play.google.com/store/apps/details?id=com.stephenprn.habits&hl=fr",
     type: "android",
     image: optimumImage,
   },
   {
     title: "Mes objectifs",
-    description: ["Application permettant de se fixer des objectifs au quotidien."],
+    description: ["Application mobile style \"to-do list\" pour le suivi d'objectifs quotidien."],
     link: "https://play.google.com/store/apps/details?id=com.stephenprn.objectifs&hl=fr",
     type: "android",
     image: objectifsImage,

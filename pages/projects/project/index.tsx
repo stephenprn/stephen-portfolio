@@ -35,7 +35,9 @@ const Project: React.FC<ProjectProps> = ({ title, description, link, image, high
     <Card highlighted={highlighted} faded={faded} link={link}>
       <div className={classes["project-inner"]}>
         <div className={classes["project-image-container"]}>
-          <Image className={classes["project-image"]} src={image} alt={`${title} image`} fill />
+          <Image className={clsx(classes["project-image"], {
+            active: highlighted
+          })} src={image} alt={`${title} image`} fill />
         </div>
         <div className={classes["project-content"]}>
           <h3>

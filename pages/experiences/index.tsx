@@ -12,8 +12,9 @@ const EXPERIENCES: IExperience[] = [
     role: "Co-fondateur",
     location: "Paris, France",
     summary: [
-      "Creation d'une plateforme qui permet de trouver des destinations en fonction des envies de l'utilisateur (par exemple le thème : vélo, montagne, culture, plage,...) accessibles en train.",
-      "Je prends en charge toute la partie technique du projet : développement back-end, front-end, infrastructure,...",
+      "Creation d'une plateforme from scratch qui permet d'inspirer et de trouver des destinations accessibles en train partout en France.",
+      "Hoppio propose des itinéraires en fonction des envies de l'utilisateur (vélo, montagne, culture, plage,...).",
+      "Prise en charge de toute la partie technique du projet : développement back-end, front-end et mise en place de l'infrastructure,...",
     ],
     skills: [
       "React.js",
@@ -34,10 +35,11 @@ const EXPERIENCES: IExperience[] = [
   {
     title: "uptime.ac",
     link: "https://www.linkedin.com/company/uptime.ac/about/",
-    role: "Développeur fullstack senior",
+    role: "Développeur full-stack senior",
     location: "Paris, France",
     summary: [
-      "Développement d'applications de maintenance d'ascenseurs en temps réel en tant que développeur fullstack senior.",
+      "Développement des applications front-end et back-end pour la maintenance d'ascenseurs.",
+      "Travail sur l'infrastructure technique, traitement et analyse des données IoT."
     ],
     skills: [
       "React.js",
@@ -69,8 +71,8 @@ const EXPERIENCES: IExperience[] = [
     role: "Responsable du développement logiciel",
     location: "Londres, Royaume-Uni",
     summary: [
-      "Développement d'un moteur de recherche de l'innovation from scratch.",
-      "Prise en charge de toute la partie technique : développement back-end, front-end, infrastructure,...",
+      "Développement d'un moteur de recherche from scratch à destination des investisseurs permettant de trouver des start-ups prometteuses.",
+      "Prise en charge de toute la partie technique : développement back-end, front-end et gestion de l'infrastructure.",
     ],
     skills: [
       "Angular",
@@ -92,9 +94,9 @@ const EXPERIENCES: IExperience[] = [
   },
   {
     title: "Nooline",
-    role: "Développeur fullstack",
+    role: "Développeur full-stack",
     location: "Cergy, France",
-    summary: ["Développement d'applications web pour divers clients publics et privés."],
+    summary: ["Développement d'applications web/mobile pour des clients du secteur publique et privé."],
     skills: ["AngularJS", "Angular", "Ionic", "fuse", "Chart.js", "Leaflet", "Java", "J2EE", "Hibernate", "Spring"],
     dates: {
       start: new Date("2017-10-01"),
@@ -107,7 +109,8 @@ const EXPERIENCES: IExperience[] = [
     role: "Ingénieur robotique/vision",
     location: "Toulouse, France",
     summary: [
-      "Développement et installation sur une ligne de production d'un système de dévracage robotisé basé sur une caméra COGNEX et un bras robotisé UR10.",
+      "Développement d'un système de dévracage robotisé basé sur une caméra COGNEX et un bras robotisé UR10.",
+      "Installation du système sur une ligne de production Continental."
     ],
     skills: ["UR", "COGNEX"],
     dates: {
@@ -120,7 +123,7 @@ const EXPERIENCES: IExperience[] = [
     link: "https://www.bassetti-group.com/",
     role: "Developpeur WEB/mobile",
     location: "Grenoble, France",
-    summary: ["Mise en place de l'environnement de développement mobile dans l'entreprise : Ionic & AngularJS."],
+    summary: ["Mise en place de l'environnement de développement mobile dans l'entreprise."],
     skills: ["AngularJS", "Ionic"],
     dates: {
       start: new Date("2016-07-01"),
