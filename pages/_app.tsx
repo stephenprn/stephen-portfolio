@@ -16,6 +16,7 @@ export default function PorfolioStephen({ Component, pageProps }: AppProps) {
           name="description"
           content="Freelance spécialisé sur les technologies React / React native / Angular et Python / Node."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
       </Head>
       <Component {...pageProps} />
     </>
