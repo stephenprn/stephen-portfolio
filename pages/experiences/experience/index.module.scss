@@ -124,9 +124,13 @@ $icon-size: 24px;
     }
   }
 
-  &.highlighted {
-    &::before {
-      background: linear-gradient(0deg, rgba(199, 203, 203, 0.5) 0%, rgba(199, 203, 203, 1) 100%);
+  &:not(.has-icon) {
+    &:not(.last) {
+      &.highlighted {
+        &::before {
+          background: linear-gradient(0deg, rgba(199, 203, 203, 0.5) 0%, rgba(199, 203, 203, 1) 100%);
+        }
+      }
     }
   }
 

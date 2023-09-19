@@ -1,6 +1,8 @@
 @import "../../styles/constants.scss";
 
 .card {
+  position: relative;
+
   padding: $card-padding;
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 8px;
