@@ -56,7 +56,8 @@ const Header: React.FC = () => {
         </div>
         <div className={classes["header-right-bottom"]}>
           <p className={classes.summary}>
-            Spécialisé sur les technologies <b>React / React native / Angular</b> en front-end et <b>Python / Node</b> en back-end.
+            Spécialisé sur les technologies <b>React / React native / Angular</b> en front-end et <b>Python / Node</b>{" "}
+            en back-end.
           </p>
         </div>
       </div>

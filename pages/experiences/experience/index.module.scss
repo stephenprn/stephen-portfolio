@@ -41,6 +41,26 @@ $time-point-size: 12px;
     transform: translate(calc(($time-line-width - $time-point-size) / 2), -50%);
   }
 
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .title-icon {
+      margin-right: 8px;
+
+      path {
+        transition: fill 0.25s ease-in-out;
+      }
+
+      &.active {
+        path {
+          fill: #f67280;
+        }
+      }
+    }
+  }
+
   .role {
     margin-bottom: 8px;
   }

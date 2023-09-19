@@ -32,20 +32,16 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            ici <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
+            sur GitHub <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
           </a>
         </p>
 
-        <p className={classes["scroll-top-paragraph"]}>
-          <Link
-            className={`${classes["scroll-top-link"]} link`}
-            href={pathname}
-            onClick={() => window.scrollTo({ top: 0 })}
-          >
-            <Icon className={classes["scroll-top-link-icon"]} name="chevronTop" height="2rem" width="2rem" />
+        <button className={classes["scroll-top-button"]} onClick={() => window.scrollTo({ top: 0 })}>
+          <div className={classes["scroll-top-button-inner"]}>
+            <Icon className={classes["scroll-top-button-icon"]} name="chevronTop" height="2rem" width="2rem" />
             Retour en haut
-          </Link>
-        </p>
+          </div>
+        </button>
       </div>
     </footer>
   );

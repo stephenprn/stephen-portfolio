@@ -9,6 +9,7 @@ import { AndroidIcon } from "./symbol/AndroidIcon";
 import { MailIcon } from "./symbol/MailIcon";
 import { WebIcon } from "./symbol/WebIcon";
 import { ChevronTopIcon } from "./symbol/ChevronTopIcon";
+import { StudentIcon } from "./symbol/StudentIcon";
 
 const ICONS = {
   malt: MaltIcon,
@@ -22,6 +23,7 @@ const ICONS = {
   mail: MailIcon,
   web: WebIcon,
   chevronTop: ChevronTopIcon,
+  student: StudentIcon,
 };
 
 export type IconName = keyof typeof ICONS;

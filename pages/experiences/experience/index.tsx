@@ -1,4 +1,4 @@
-import { Icon } from "@/components/Icon";
+import { Icon, IconName } from "@/components/Icon";
 import classes from "./index.module.scss";
 import clsx from "clsx";
 import { format } from "date-fns";
@@ -10,6 +10,7 @@ interface ExperienceDates {
 }
 
 export interface IExperience {
+  icon?: IconName;
   title: string;
   link?: string;
   role: string;
@@ -24,6 +25,7 @@ interface ExperienceProps extends IExperience, CardProps {
 }
 
 const Experience: React.FC<ExperienceProps> = ({
+  icon,
   title,
   link,
   role,
@@ -45,6 +47,15 @@ const Experience: React.FC<ExperienceProps> = ({
     >
       <Card highlighted={highlighted} faded={faded} link={link}>
         <h3 className={classes.title}>
+          {icon ? (
+            <Icon
+              name={icon}
+              className={clsx(classes["title-icon"], {
+                [classes["active"]]: highlighted,
+              })}
+              color="#ffffff"
+            />
+          ) : null}
           {link ? (
             <a
               className={clsx("link", {

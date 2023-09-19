@@ -24,7 +24,7 @@ const PROJECTS: IProject[] = [
     title: "Optimum",
     description: [
       "Application mobile permettant de monitorer vos habitudes au quotidien de manière personnalisée.",
-      "Création de nouvelles routines saines afin de réduire vos mauvaises habitudes."
+      "Création de nouvelles routines saines afin de réduire vos mauvaises habitudes.",
     ],
     link: "https://play.google.com/store/apps/details?id=com.stephenprn.habits&hl=fr",
     type: "android",
@@ -32,7 +32,7 @@ const PROJECTS: IProject[] = [
   },
   {
     title: "Mes objectifs",
-    description: ["Application mobile style \"to-do list\" pour le suivi de vos objectifs au quotidien."],
+    description: ['Application mobile style "to-do list" pour le suivi de vos objectifs au quotidien.'],
     link: "https://play.google.com/store/apps/details?id=com.stephenprn.objectifs&hl=fr",
     type: "android",
     image: objectifsImage,

@@ -25,7 +25,7 @@
       position: unset !important;
 
       &.active {
-        transform: scale(1.2);
+        transform: scale(1.1);
       }
     }
   }
@@ -65,7 +65,14 @@
     flex-direction: column;
 
     .project-image-container {
-      margin-bottom: 16px;
+      margin-bottom: 32px;
+      margin-top: 16px;
+
+      .project-image {
+        &.active {
+          transform: scale(1.25);
+        }
+      }
     }
 
     .project-content {

@@ -4,6 +4,7 @@ import classes from "./index.module.scss";
 import Experience, { IExperience } from "./experience";
 import CardsContainer from "@/components/CardsContainer";
 import { CARD_CONTAINER_CLASSNAME } from "../../constants";
+import { Icon } from "@/components/Icon";
 
 const EXPERIENCES: IExperience[] = [
   {
@@ -39,7 +40,7 @@ const EXPERIENCES: IExperience[] = [
     location: "Paris, France",
     summary: [
       "Développement des applications front-end et back-end pour la maintenance d'ascenseurs.",
-      "Travail sur l'infrastructure technique, traitement et analyse des données IoT."
+      "Travail sur l'infrastructure technique, traitement et analyse des données IoT.",
     ],
     skills: [
       "React.js",
@@ -110,7 +111,7 @@ const EXPERIENCES: IExperience[] = [
     location: "Toulouse, France",
     summary: [
       "Développement d'un système de dévracage robotisé basé sur une caméra COGNEX et un bras robotisé UR10.",
-      "Installation du système sur une ligne de production Continental."
+      "Installation du système sur une ligne de production Continental.",
     ],
     skills: ["UR", "COGNEX"],
     dates: {
@@ -128,6 +129,18 @@ const EXPERIENCES: IExperience[] = [
     dates: {
       start: new Date("2016-07-01"),
       end: new Date("2017-01-01"),
+    },
+  },
+  {
+    icon: "student",
+    title: "ICAM",
+    role: "Diplôme d'ingénieur",
+    location: "Toulouse, France",
+    summary: ["Spécialisation M2M (machine to machine) objets connectés"],
+    skills: [],
+    dates: {
+      start: new Date("2012-09-01"),
+      end: new Date("2017-09-01"),
     },
   },
 ];

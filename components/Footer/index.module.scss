@@ -26,25 +26,30 @@
     background-color: #ffffff44;
   }
 
-  .scroll-top-link {
+  .scroll-top-button {
+    display: none;
+    justify-content: center;
+
     margin-top: 64px;
 
-    opacity: 0.8;
+    background: none;
+    border: none;
+    width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    .scroll-top-button-inner {
+      opacity: 0.8;
 
-  .scroll-top-paragraph {
-    display: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
 @media screen and (max-width: $tablet-breakpoint) {
   .footer {
-    .scroll-top-paragraph {
-      display: block;
+    .scroll-top-button {
+      display: flex;
     }
   }
 }
