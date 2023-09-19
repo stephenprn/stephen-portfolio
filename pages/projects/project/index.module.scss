@@ -24,8 +24,15 @@
 
       position: unset !important;
 
+      -webkit-filter: drop-shadow(0 0 16px #00000033);
+      filter: drop-shadow(0 0 16px #00000033);
+
       &.active {
         transform: scale(1.1);
+      }
+
+      &.android {
+        border-radius: 16px;
       }
     }
   }
@@ -52,9 +59,13 @@
     }
 
     .project-description-container {
+      opacity: 0.9;
       margin-top: 8px;
 
       .project-description-paragraph {
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
       }
     }
   }

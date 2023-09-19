@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
 @import "./constants.scss";
 
+$background-color: #0b1c1c;
+$background-color-secondary: #004949;
+
 // base elements
 
 html,
@@ -9,6 +12,14 @@ body {
   scroll-behavior: smooth;
   width: 100vw;
   overflow-x: hidden;
+
+  background-color: $background-color;
+  background: linear-gradient(160deg, $background-color 0%, $background-color-secondary 100%) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 * {

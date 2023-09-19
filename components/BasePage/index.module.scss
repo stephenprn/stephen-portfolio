@@ -2,8 +2,6 @@
 
 $spotlight-size: 400px;
 $spotlight-color: #105757;
-$background-color: #0b1c1c;
-$background-color-secondary: #004949;
 
 @keyframes appears-slide {
   from {
@@ -19,7 +17,7 @@ $background-color-secondary: #004949;
 
 .base-page-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   min-height: 100lvh;
@@ -32,9 +30,6 @@ $background-color-secondary: #004949;
     right: 0;
     bottom: 0;
     left: 0;
-
-    background-color: $background-color;
-    background-image: linear-gradient(160deg, $background-color 0%, $background-color-secondary 100%);
 
     &::after {
       content: "";

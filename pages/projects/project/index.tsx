@@ -38,6 +38,7 @@ const Project: React.FC<ProjectProps> = ({ title, description, link, image, high
           <Image
             className={clsx(classes["project-image"], {
               [classes["active"]]: highlighted,
+              [classes["android"]]: type === "android",
             })}
             src={image}
             alt={`${title} image`}
