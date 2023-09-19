@@ -44,7 +44,7 @@ const CardsContainer: React.FC<CardsContainerProps> = ({ setIndexHighlighted, ch
 
   useScrollListener(elementToListen, handleScroll);
 
-  return <div className={`${classes["card-container"]}`}>{children}</div>;
+  return <div className={`${classes["cards-container"]}`}>{children}</div>;
 };
 
 export default CardsContainer;
