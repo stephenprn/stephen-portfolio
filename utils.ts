@@ -14,7 +14,10 @@ export const useScrollListener = (element: HTMLElement | Window | null, handleSc
       clearTimeout(scrollingTimer.current);
     }
 
-    scrollingTimer.current = setTimeout(() => element.addEventListener("scroll", listenToScroll), throttle);
+    scrollingTimer.current = setTimeout(
+      () => element.addEventListener("scroll", listenToScroll, { passive: true }),
+      throttle
+    );
     handleScroll();
   }, [throttle, element, handleScroll]);
 
@@ -23,7 +26,7 @@ export const useScrollListener = (element: HTMLElement | Window | null, handleSc
       return;
     }
 
-    element.addEventListener("scroll", listenToScroll);
+    element.addEventListener("scroll", listenToScroll, { passive: true });
     return () => {
       element.removeEventListener("scroll", listenToScroll);
 
