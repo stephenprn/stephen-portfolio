@@ -4,61 +4,61 @@ $time-line-color: #c7cbcb;
 $time-line-width: 2px;
 $time-point-size: 12px;
 
+$icon-size: 24px;
+
 .experience {
   position: relative;
 
   // time line
 
-  &:not(.last) {
-    &::before {
-      content: "";
+  &:not(.has-icon) {
+    &:not(.last) {
+      &::before {
+        content: "";
 
-      width: $time-line-width;
-      background: $time-line-color;
+        width: $time-line-width;
+        background: $time-line-color;
 
-      position: absolute;
-      left: calc(-1 * $card-padding);
-      top: calc($card-padding + $h3-font-size / 2 + $time-point-size / 2);
-      bottom: calc(-2 * $card-padding - $h3-font-size / 2 + $time-point-size / 2 + 16px);
+        position: absolute;
+        left: calc(-1 * $card-padding);
+        top: calc($card-padding + $h3-font-size / 2 + $time-point-size / 2);
+        bottom: calc(-2 * $card-padding - $h3-font-size / 2 + $time-point-size / 2 + 16px);
+      }
     }
   }
 
   // time point
 
-  &::after {
-    content: "";
+  &:not(.has-icon) {
+    &::after {
+      content: "";
 
-    height: $time-point-size;
-    width: $time-point-size;
-    border-radius: 50%;
+      height: $time-point-size;
+      width: $time-point-size;
+      border-radius: 50%;
 
-    background-color: $time-line-color;
+      background-color: $time-line-color;
 
+      position: absolute;
+      top: calc($card-padding + $h3-font-size / 2);
+      left: calc(-1 * $card-padding);
+
+      transform: translate(calc(($time-line-width - $time-point-size) / 2), -50%);
+    }
+  }
+
+  .experience-icon {
     position: absolute;
     top: calc($card-padding + $h3-font-size / 2);
     left: calc(-1 * $card-padding);
 
-    transform: translate(calc(($time-line-width - $time-point-size) / 2), -50%);
+    transform: translate(calc((-1 * $icon-size) / 2), -50%);
   }
 
   .title {
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    .title-icon {
-      margin-right: 8px;
-
-      path {
-        transition: fill 0.25s ease-in-out;
-      }
-
-      &.active {
-        path {
-          fill: #f67280;
-        }
-      }
-    }
   }
 
   .role {
@@ -137,21 +137,33 @@ $time-point-size: 12px;
 
 @media screen and (max-width: $tablet-breakpoint) {
   .experience {
+    .experience-icon {
+      position: absolute;
+      top: calc($card-padding-mobile + $h3-font-size / 2);
+      left: calc(-1 * $card-padding-mobile);
+
+      transform: translate(calc((-1 * $icon-size - 16px) / 2), -50%);
+    }
+
     // time line
 
-    &:not(.last) {
-      &::before {
-        left: calc(-1 * $card-padding-mobile);
-        top: calc($card-padding-mobile + $h3-font-size / 2 + $time-point-size / 2);
-        bottom: calc(-2 * $card-padding-mobile - $h3-font-size / 2 + $time-point-size / 2);
+    &:not(.has-icon) {
+      &:not(.last) {
+        &::before {
+          left: calc(-1 * $card-padding-mobile - 8px);
+          top: calc($card-padding-mobile + $h3-font-size / 2 + $time-point-size / 2);
+          bottom: calc(-2 * $card-padding-mobile - $h3-font-size / 2 + $time-point-size / 2);
+        }
       }
     }
 
     // time point
 
-    &::after {
-      top: calc($card-padding-mobile + $h3-font-size / 2);
-      left: calc(-1 * $card-padding-mobile);
+    &:not(.has-icon) {
+      &::after {
+        top: calc($card-padding-mobile + $h3-font-size / 2);
+        left: calc(-1 * $card-padding-mobile - 8px);
+      }
     }
   }
 }

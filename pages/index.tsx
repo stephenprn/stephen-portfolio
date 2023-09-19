@@ -15,7 +15,8 @@ const Home: React.FC = () => {
           de travailler pour des start-ups en France ainsi que pour des clients à l&apos;international.
         </p>
         <p>
-          En tant que <b>projets personnels</b>, j&apos;ai également développé et lancé deux applications mobiles{" "}
+          En parallèle de mon activité professionnelle, j&apos;ai consacré du temps pour développer et lancer deux
+          applications mobiles{" "}
           <Link className="link" href="/projects">
             disponibles ici <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
           </Link>

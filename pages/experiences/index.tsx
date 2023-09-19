@@ -4,7 +4,6 @@ import classes from "./index.module.scss";
 import Experience, { IExperience } from "./experience";
 import CardsContainer from "@/components/CardsContainer";
 import { CARD_CONTAINER_CLASSNAME } from "../../constants";
-import { Icon } from "@/components/Icon";
 
 const EXPERIENCES: IExperience[] = [
   {
@@ -131,6 +130,9 @@ const EXPERIENCES: IExperience[] = [
       end: new Date("2017-01-01"),
     },
   },
+];
+
+const EDUCATIONS: IExperience[] = [
   {
     icon: "student",
     title: "ICAM",
@@ -169,6 +171,30 @@ const Experiences: React.FC = () => {
                 last={index === EXPERIENCES.length - 1}
                 highlighted={index === indexHighlighted}
                 faded={indexHighlighted !== null && index !== indexHighlighted}
+              />
+            </div>
+          ))}
+        </CardsContainer>
+      </div>
+      <div className={classes.education}>
+        <CardsContainer setIndexHighlighted={setIndexHighlighted}>
+          {EDUCATIONS.map((experience, index) => (
+            <div
+              key={index}
+              className={CARD_CONTAINER_CLASSNAME}
+              data-index={EXPERIENCES.length + index}
+              onMouseEnter={() => {
+                setIndexHighlighted(EXPERIENCES.length + index);
+              }}
+              onMouseLeave={() => {
+                setIndexHighlighted(null);
+              }}
+            >
+              <Experience
+                {...experience}
+                last={true}
+                highlighted={EXPERIENCES.length + index === indexHighlighted}
+                faded={indexHighlighted !== null && EXPERIENCES.length + index !== indexHighlighted}
               />
             </div>
           ))}

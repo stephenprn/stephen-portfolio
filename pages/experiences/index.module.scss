@@ -1,5 +1,10 @@
 @import "../../styles/constants.scss";
 
-.experiences {
+.experiences,
+.education {
   padding-left: 32px;
+}
+
+.education {
+  margin-top: 32px;
 }

@@ -43,19 +43,14 @@ const Experience: React.FC<ExperienceProps> = ({
         [classes.last]: last,
         [classes.highlighted]: highlighted,
         [classes.faded]: faded,
+        [classes["has-icon"]]: !!icon,
       })}
     >
       <Card highlighted={highlighted} faded={faded} link={link}>
+        {icon ? (
+          <Icon name={icon} className={clsx(classes["experience-icon"])} height={24} width={24} color="#ffffff" />
+        ) : null}
         <h3 className={classes.title}>
-          {icon ? (
-            <Icon
-              name={icon}
-              className={clsx(classes["title-icon"], {
-                [classes["active"]]: highlighted,
-              })}
-              color="#ffffff"
-            />
-          ) : null}
           {link ? (
             <a
               className={clsx("link", {
