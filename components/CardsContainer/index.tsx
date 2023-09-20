@@ -43,7 +43,7 @@ const CardsContainer: React.FC<CardsContainerProps> = ({ setIndexHighlighted, ch
             }
 
             if (distanceFromTop < 0) {
-              setIndexHighlighted(indexExperience === experiencesContainer.length ? null : indexExperience + 1);
+              setIndexHighlighted(indexExperience === experiencesContainer.length - 1 ? null : indexExperience + 1);
               break;
             }
           }

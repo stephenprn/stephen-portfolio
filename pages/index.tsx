@@ -1,6 +1,6 @@
 import classes from "./index.module.scss";
 import BasePage from "../components/BasePage";
-import Link from "next/link";
+import { Link } from "@/components/Link";
 import { Icon } from "@/components/Icon";
 
 const Home: React.FC = () => {
@@ -16,18 +16,14 @@ const Home: React.FC = () => {
         </p>
         <p>
           En parallèle de mon activité professionnelle, j&apos;ai consacré du temps pour développer et lancer deux
-          applications mobiles{" "}
-          <Link className="link" href="/projects">
-            disponibles ici <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
-          </Link>
-          .
+          applications mobiles <Link href="/projects">disponibles ici</Link>.
         </p>
         <p>
           En 2023, j&apos;ai décidé de me lancer dans l&apos;<b>entrepreunariat</b>. Avec mon associée, nous avons lancé
           le plateforme{" "}
-          <a className="link" href="https://hoppio.fr/" target="_blank" rel="noopener noreferrer">
-            Hoppio <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
-          </a>
+          <Link href="https://hoppio.fr/" target="_blank" rel="noopener noreferrer">
+            Hoppio
+          </Link>
           . Sur ce projet, je prends en charge le développement front-end, back-end et la gestion de
           l&apos;infrastructure.
         </p>

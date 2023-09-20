@@ -13,7 +13,7 @@ $navigation-item-color: #ffffff;
 
       font-size: 1.2rem;
 
-      transition: opacity 0.25s ease-in-out;
+      transition: opacity 0.15s ease-in-out;
 
       &:not(:last-child) {
         margin-bottom: 16px;
@@ -32,7 +32,7 @@ $navigation-item-color: #ffffff;
 
         background-color: $navigation-item-color;
 
-        transition: transform 0.25s ease-in-out;
+        transition: transform 0.15s ease-in-out;
       }
 
       .navigation-link {

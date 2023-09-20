@@ -1,12 +1,12 @@
 import classes from "./index.module.scss";
-import Link from "next/link";
+import { Link } from "@/components/Link";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
 
 const NAVIGATION_ITEMS = [
-  { title: "À propos", pathname: "/" },
-  { title: "Experiences", pathname: "/experiences" },
-  { title: "Projets", pathname: "/projects" },
+  { title: "À PROPOS", pathname: "/" },
+  { title: "EXPÉRIENCE", pathname: "/experiences" },
+  { title: "PROJETS", pathname: "/projects" },
 ] as const;
 
 const NavigationBar: React.FC = () => {
@@ -23,7 +23,7 @@ const NavigationBar: React.FC = () => {
             })}
           >
             <span className={classes["navigation-item-separator"]} />
-            <Link className={classes["navigation-link"]} href={pathname}>
+            <Link className={classes["navigation-link"]} href={pathname} showArrow={false}>
               {title}
             </Link>
           </li>

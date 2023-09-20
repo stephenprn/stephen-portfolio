@@ -3,6 +3,7 @@ import classes from "./index.module.scss";
 import clsx from "clsx";
 import { format } from "date-fns";
 import Card, { CardProps } from "@/components/Card";
+import { Link } from "@/components/Link";
 
 interface ExperienceDates {
   start: Date;
@@ -52,16 +53,9 @@ const Experience: React.FC<ExperienceProps> = ({
         ) : null}
         <h3 className={classes.title}>
           {link ? (
-            <a
-              className={clsx("link", {
-                active: highlighted,
-              })}
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {title} <Icon className="link-icon" name="arrowTopRight" height="1.2rem" width="1.2rem" />
-            </a>
+            <Link active={highlighted} arrowSize="1.2rem" href={link} target="_blank" rel="noopener noreferrer">
+              {title}
+            </Link>
           ) : (
             <>{title}</>
           )}

@@ -8,6 +8,7 @@ import hoppioImage from "@/assets/projects/hoppio.png";
 import { Icon } from "@/components/Icon";
 import CardsContainer from "@/components/CardsContainer";
 import { CARD_CONTAINER_CLASSNAME } from "../../constants";
+import { Link } from "@/components/Link";
 
 const PROJECTS: IProject[] = [
   {
@@ -66,9 +67,9 @@ const Projects: React.FC = () => {
         <div className={`${classes["projects-paragraphs-group"]} paragraphs-group`}>
           <p>
             Le code source de certains de mes projets est disponible sur mon{" "}
-            <a className="link" href="https://github.com/stephenprn" target="_blank" rel="noopener noreferrer">
-              GitHub <Icon className="link-icon" name="arrowTopRight" height="0.8rem" width="0.8rem" />
-            </a>
+            <Link href="https://github.com/stephenprn" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </Link>
           </p>
         </div>
       </div>

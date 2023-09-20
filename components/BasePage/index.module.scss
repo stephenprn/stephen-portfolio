@@ -24,7 +24,7 @@ $spotlight-color: #105757;
 
   .spotlight-mask {
     position: fixed;
-    z-index: -1;
+    z-index: 1;
 
     top: 0;
     right: 0;
@@ -53,6 +53,9 @@ $spotlight-color: #105757;
     width: 100%;
     max-width: 1200px;
     padding: 64px;
+
+    position: relative;
+    z-index: 10;
 
     .base-page-main {
       display: flex;

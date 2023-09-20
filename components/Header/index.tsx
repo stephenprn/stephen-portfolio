@@ -2,6 +2,7 @@ import classes from "./index.module.scss";
 import Image from "next/image";
 import stephenImage from "../../assets/stephen.png";
 import { Icon, IconName } from "../Icon";
+import { Link } from "@/components/Link";
 
 const SOCIAL_ITEMS: { name: IconName; link: string }[] = [
   {
@@ -26,13 +27,7 @@ const Header: React.FC = () => {
   return (
     <header className={classes.header}>
       <div className={`${classes["header-left"]} left-part`}>
-        <Image
-          className={classes["stephen-image"]}
-          src={stephenImage}
-          priority={true}
-          alt="Photo de Stephen Perrin"
-          fill
-        />
+        <Image className={classes["stephen-image"]} src={stephenImage} priority={true} alt="Stephen Perrin" fill />
       </div>
       <div className={classes["header-right"]}>
         <div className={classes["header-right-top"]}>
@@ -41,15 +36,16 @@ const Header: React.FC = () => {
           <ul className={classes["social-links"]}>
             {SOCIAL_ITEMS.map(({ name, link }) => (
               <li className={classes["social-item"]} key={name}>
-                <a
+                <Link
                   className={classes["social-link"]}
                   href={link}
+                  showArrow={false}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={name}
                 >
                   <Icon className={classes["social-link-icon"]} name={name} color="#ffffff" height={32} width={32} />
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
