@@ -2,6 +2,7 @@ import classes from "./index.module.scss";
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
 import { Icon } from "../Icon";
 import { AnchorHTMLAttributes } from "react";
+import clsx from "clsx";
 
 interface LinkProps extends Omit<NextLinkProps, "href">, AnchorHTMLAttributes<HTMLAnchorElement> {
   href: string;
@@ -19,7 +20,12 @@ export const Link: React.FC<LinkProps> = ({
   ...props
 }) => {
   return (
-    <NextLink {...props} className={`${className} ${classes.link} link`}>
+    <NextLink
+      {...props}
+      className={clsx(`${className} ${classes.link} link`, {
+        active,
+      })}
+    >
       {children}{" "}
       {showArrow ? (
         <Icon
