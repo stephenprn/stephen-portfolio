@@ -15,7 +15,7 @@ const CardsContainer: React.FC<CardsContainerProps> = ({ setIndexHighlighted, ch
     if (window.screen.width > TABLET_BREAKPOINT) {
       return;
     }
-    const experiencesContainer = document.getElementsByClassName(CARD_CONTAINER_CLASSNAME);
+    const cardsContainer = document.getElementsByClassName(CARD_CONTAINER_CLASSNAME);
 
     const handleScroll = () => {
       if (highlightedTimeout) {
@@ -24,13 +24,13 @@ const CardsContainer: React.FC<CardsContainerProps> = ({ setIndexHighlighted, ch
 
       setHighlightedTimeout(
         setTimeout(() => {
-          for (const experienceContainer of Array.from(experiencesContainer).reverse()) {
-            if (!(experienceContainer instanceof HTMLElement)) {
+          for (const cardContainer of Array.from(cardsContainer).reverse()) {
+            if (!(cardContainer instanceof HTMLElement)) {
               return;
             }
 
-            const distanceFromTop = document.body.scrollTop + experienceContainer.getBoundingClientRect().top;
-            const indexExperience = parseInt(experienceContainer.dataset.index || "0", 10);
+            const distanceFromTop = document.body.scrollTop + cardContainer.getBoundingClientRect().top;
+            const indexExperience = parseInt(cardContainer.dataset.index || "0", 10);
 
             if (indexExperience === 0 && distanceFromTop > 0 && distanceFromTop > window.screen.height / 4) {
               setIndexHighlighted(null);
@@ -43,7 +43,7 @@ const CardsContainer: React.FC<CardsContainerProps> = ({ setIndexHighlighted, ch
             }
 
             if (distanceFromTop < 0) {
-              setIndexHighlighted(indexExperience === experiencesContainer.length - 1 ? null : indexExperience + 1);
+              setIndexHighlighted(indexExperience === cardsContainer.length - 1 ? null : indexExperience + 1);
               break;
             }
           }

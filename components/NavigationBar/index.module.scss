@@ -1,6 +1,6 @@
 @import "../../styles/constants.scss";
 
-$navigation-item-color: #ffffff;
+$navigation-item-color: $color-white;
 
 .navigation-bar {
   .navigation-bar-inner {
@@ -13,10 +13,10 @@ $navigation-item-color: #ffffff;
 
       font-size: 1.2rem;
 
-      transition: opacity 0.15s ease-in-out;
+      transition: opacity $transition-duration $transition-timing-function;
 
       &:not(:last-child) {
-        margin-bottom: 16px;
+        margin-bottom: $medium-spacing;
       }
 
       .navigation-item-separator {
@@ -25,14 +25,14 @@ $navigation-item-color: #ffffff;
         transform-origin: left;
         transform: scaleX(0.5);
 
-        width: 32px;
+        width: $large-spacing;
         height: 2px;
 
-        margin-right: 16px;
+        margin-right: $medium-spacing;
 
         background-color: $navigation-item-color;
 
-        transition: transform 0.15s ease-in-out;
+        transition: transform $transition-duration $transition-timing-function;
       }
 
       .navigation-link {
@@ -56,7 +56,7 @@ $navigation-item-color: #ffffff;
 
 @media screen and (max-width: $tablet-breakpoint) {
   .navigation-bar {
-    margin-bottom: 32px;
+    margin-bottom: $large-spacing;
 
     .navigation-bar-inner {
       display: flex;
@@ -69,7 +69,7 @@ $navigation-item-color: #ffffff;
 
         &:not(:last-child) {
           margin-bottom: 0;
-          margin-right: 16px;
+          margin-right: $medium-spacing;
         }
 
         .navigation-item-separator {

@@ -1,13 +1,28 @@
-$color-primary: #f67280;
-// #C06C84, #6C5B7B
-$color-secondary: #355c7d;
+$color-primary: #0b1c1c;
+$color-accent: #f67280;
+$color-white: #ffffff;
+
+// spacing
+
+$small-spacing: 8px;
+$medium-spacing: 16px;
+$large-spacing: 32px;
+$xlarge-spacing: 64px;
+
+// transition
+
+$transition-duration: 0.15s;
+$transition-timing-function: ease-in-out;
 
 // sizes
 
 $card-padding: 32px;
 $card-padding-mobile: 16px;
-$h3-font-size: 1.4rem;
 
 $left-part-width: 220px;
+$h3-font-size: 1.4rem;
+
+// layout
 
 $tablet-breakpoint: 768px;
+$content-max-width: 1200px;

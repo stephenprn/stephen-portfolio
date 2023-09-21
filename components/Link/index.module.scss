@@ -1,15 +1,17 @@
+@import "../../styles/constants.scss";
+
 .link {
   font-weight: 500;
-  color: #ffffff;
+  color: $color-white;
 
-  transition: color 0.15s ease-in-out;
+  transition: color $transition-duration $transition-timing-function;
 
   path {
-    transition: fill 0.15s ease-in-out;
+    transition: fill $transition-duration $transition-timing-function;
   }
 
   .link-icon {
-    transition: transform 0.15s ease-in-out;
+    transition: transform $transition-duration $transition-timing-function;
     transform: translate(-25%, 25%) scale(1);
   }
 }

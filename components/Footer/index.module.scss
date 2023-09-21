@@ -3,7 +3,7 @@
 .footer {
   position: relative;
 
-  padding: 32px 0;
+  padding: $large-spacing 0;
 
   .footer-paragraphs-group {
     > p {
@@ -20,8 +20,8 @@
     height: 1px;
 
     top: 0;
-    left: 64px;
-    right: 64px;
+    left: $xlarge-spacing;
+    right: $xlarge-spacing;
 
     background-color: #ffffff44;
   }
@@ -30,7 +30,7 @@
     display: none;
     justify-content: center;
 
-    margin-top: 64px;
+    margin-top: $xlarge-spacing;
 
     background: none;
     border: none;

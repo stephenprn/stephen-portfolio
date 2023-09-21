@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
 @import "./constants.scss";
 
-$background-color: #0b1c1c;
+$background-color: $color-primary;
 $background-color-secondary: #004949;
 
 $spotlight-size: 400px;
@@ -54,9 +54,20 @@ body {
   padding: 0;
   box-sizing: border-box;
 
-  color: #ffffff;
-  font-family: "League Spartan";
+  color: $color-white;
+  font-family: "League Spartan", "Arial, Helvetica, sans-serif";
   font-weight: 300;
+
+  ::-moz-selection {
+    /* Code for Firefox */
+    color: $background-color;
+    background: $color-accent;
+  }
+
+  ::selection {
+    color: $background-color;
+    background: $color-accent;
+  }
 }
 
 a {
@@ -73,17 +84,17 @@ p {
 }
 
 h1 {
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", "Georgia, serif";
   font-weight: 700;
 }
 
 h3 {
-  margin-bottom: 8px;
+  margin-bottom: $small-spacing;
 
   font-size: $h3-font-size;
   font-weight: 500;
 
-  transition: color 0.15s ease-in-out;
+  transition: color $transition-duration $transition-timing-function;
 
   .title-link {
     font-weight: 500;
@@ -95,18 +106,20 @@ h3 {
     color: #ffffffcc;
 
     &:not(:last-child) {
-      margin-bottom: 8px;
+      margin-bottom: $small-spacing;
     }
   }
 }
 
+// cards
+
 .link:hover,
 .card:hover .link,
 .link.active {
-  color: #f67280;
+  color: $color-accent;
 
   path {
-    fill: #f67280;
+    fill: $color-accent;
   }
 
   .link-icon {
@@ -114,11 +127,21 @@ h3 {
   }
 }
 
+.card-container {
+  &:not(:first-child) {
+    padding-top: $small-spacing;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: $small-spacing;
+  }
+}
+
 // layouts
 
 .left-part {
   width: $left-part-width;
-  margin-right: 32px;
+  margin-right: $large-spacing;
 }
 
 @media screen and (max-width: $tablet-breakpoint) {

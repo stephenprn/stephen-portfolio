@@ -14,7 +14,7 @@
     height: 100px;
 
     .project-image {
-      transition: transform 0.15s ease-in-out;
+      transition: transform $transition-duration $transition-timing-function;
 
       max-width: 100% !important;
       max-height: 100% !important;
@@ -24,21 +24,21 @@
 
       position: unset !important;
 
-      -webkit-filter: drop-shadow(0 0 16px #00000033);
-      filter: drop-shadow(0 0 16px #00000033);
+      -webkit-filter: drop-shadow(0 0 $medium-spacing #00000033);
+      filter: drop-shadow(0 0 $medium-spacing #00000033);
 
       &.active {
         transform: scale(1.15);
       }
 
       &.android {
-        border-radius: 16px;
+        border-radius: $medium-spacing;
       }
     }
   }
 
   .project-content {
-    margin-left: 32px;
+    margin-left: $large-spacing;
 
     flex: 1;
 
@@ -54,17 +54,17 @@
       align-items: center;
 
       .project-type-icon {
-        margin-right: 8px;
+        margin-right: $small-spacing;
       }
     }
 
     .project-description-container {
       opacity: 0.9;
-      margin-top: 8px;
+      margin-top: $small-spacing;
 
       .project-description-paragraph {
         &:not(:last-child) {
-          margin-bottom: 8px;
+          margin-bottom: $small-spacing;
         }
       }
     }
@@ -76,8 +76,8 @@
     flex-direction: column;
 
     .project-image-container {
-      margin-bottom: 32px;
-      margin-top: 16px;
+      margin-bottom: $large-spacing;
+      margin-top: $medium-spacing;
     }
 
     .project-content {

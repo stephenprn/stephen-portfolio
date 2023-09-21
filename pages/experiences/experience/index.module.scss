@@ -22,7 +22,7 @@ $icon-size: 20px;
         position: absolute;
         left: calc(-1 * $card-padding);
         top: calc($card-padding + $h3-font-size / 2 + $time-point-size / 2);
-        bottom: calc(-2 * $card-padding - $h3-font-size / 2 + $time-point-size / 2 + 16px);
+        bottom: calc(-2 * $card-padding - $h3-font-size / 2 + $time-point-size / 2 + $medium-spacing);
       }
     }
   }
@@ -62,7 +62,7 @@ $icon-size: 20px;
   }
 
   .role {
-    margin-bottom: 8px;
+    margin-bottom: $small-spacing;
   }
 
   .location-dates-container {
@@ -77,25 +77,25 @@ $icon-size: 20px;
       align-items: center;
 
       .icon {
-        margin-right: 8px;
+        margin-right: $small-spacing;
       }
 
       &:not(:last-child) {
-        margin-right: 16px;
+        margin-right: $medium-spacing;
       }
     }
 
-    margin-bottom: 16px;
+    margin-bottom: $medium-spacing;
   }
 
   .summary-container {
     opacity: 0.9;
 
-    margin-bottom: 16px;
+    margin-bottom: $medium-spacing;
 
     .summary-paragraph {
       &:not(:last-child) {
-        margin-bottom: 8px;
+        margin-bottom: $small-spacing;
       }
     }
   }
@@ -107,16 +107,16 @@ $icon-size: 20px;
     flex-direction: row;
     flex-wrap: wrap;
 
-    gap: 8px;
+    gap: $small-spacing;
 
     .skill {
       padding: 6px 12px;
       border-radius: 100px;
 
-      background-color: #f6728033;
+      background-color: rgba($color-accent, 0.25);
 
       .skill-inner {
-        color: #f67280;
+        color: $color-accent;
 
         font-size: 0.8rem;
         font-weight: 500;
@@ -146,7 +146,7 @@ $icon-size: 20px;
       top: calc($card-padding-mobile + $h3-font-size / 2);
       left: calc(-1 * $card-padding-mobile);
 
-      transform: translate(calc((-1 * $icon-size - 16px) / 2), -50%);
+      transform: translate(calc((-1 * $icon-size - $medium-spacing) / 2), -50%);
     }
 
     // time line
@@ -154,7 +154,7 @@ $icon-size: 20px;
     &:not(.has-icon) {
       &:not(.last) {
         &::before {
-          left: calc(-1 * $card-padding-mobile - 8px);
+          left: calc(-1 * $card-padding-mobile - $small-spacing);
           top: calc($card-padding-mobile + $h3-font-size / 2 + $time-point-size / 2);
           bottom: calc(-2 * $card-padding-mobile - $h3-font-size / 2 + $time-point-size / 2);
         }
@@ -166,7 +166,7 @@ $icon-size: 20px;
     &:not(.has-icon) {
       &::after {
         top: calc($card-padding-mobile + $h3-font-size / 2);
-        left: calc(-1 * $card-padding-mobile - 8px);
+        left: calc(-1 * $card-padding-mobile - $small-spacing);
       }
     }
   }

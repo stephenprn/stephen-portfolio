@@ -1,13 +1,13 @@
 @import "../../styles/constants.scss";
 
-$header-image-border-width: 8px;
+$header-image-border-width: $small-spacing;
 
 .header {
   display: flex;
   flex-direction: row;
   align-items: stretch;
 
-  margin-bottom: 32px;
+  margin-bottom: $large-spacing;
 
   .header-left {
     display: flex;
@@ -19,7 +19,7 @@ $header-image-border-width: 8px;
 
       border-radius: 50%;
 
-      border: $header-image-border-width solid #ffffff;
+      border: $header-image-border-width solid $color-white;
     }
   }
 
@@ -35,7 +35,7 @@ $header-image-border-width: 8px;
       }
 
       .sub-title {
-        margin-top: 8px;
+        margin-top: $small-spacing;
       }
 
       .social-links {
@@ -45,24 +45,24 @@ $header-image-border-width: 8px;
 
         list-style-type: none;
 
-        margin-top: 16px;
+        margin-top: $medium-spacing;
 
         .social-item {
           opacity: 0.5;
-          transition: opacity 0.15s ease-in-out;
+          transition: opacity $transition-duration $transition-timing-function;
 
           &:hover {
             opacity: 1;
           }
 
           &:not(:last-child) {
-            margin-right: 16px;
+            margin-right: $medium-spacing;
           }
 
           .social-link {
             .social-link-icon {
               path {
-                fill: #ffffff;
+                fill: $color-white;
               }
             }
           }
@@ -87,7 +87,7 @@ $header-image-border-width: 8px;
     display: block;
 
     .header-left {
-      margin-bottom: 16px;
+      margin-bottom: $medium-spacing;
 
       padding: 0 25%;
     }
@@ -96,7 +96,7 @@ $header-image-border-width: 8px;
       text-align: center;
 
       .header-right-bottom {
-        margin-top: 16px;
+        margin-top: $medium-spacing;
       }
 
       .header-right-top {

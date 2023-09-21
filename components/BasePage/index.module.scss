@@ -51,8 +51,8 @@ $spotlight-color: #105757;
   .base-page {
     height: 100%;
     width: 100%;
-    max-width: 1200px;
-    padding: 64px;
+    max-width: $content-max-width;
+    padding: $xlarge-spacing;
 
     position: relative;
     z-index: 10;
@@ -61,16 +61,16 @@ $spotlight-color: #105757;
       display: flex;
       flex-direction: row;
 
-      padding: 32px 0;
+      padding: $large-spacing 0;
 
       .base-page-navigation-bar-container {
       }
 
       .base-page-content {
-        animation: appears-slide 0.25s ease-in-out;
+        animation: appears-slide $transition-duration $transition-timing-function;
 
         .base-page-content-footer-container {
-          margin-top: 32px;
+          margin-top: $large-spacing;
         }
       }
     }
@@ -80,14 +80,14 @@ $spotlight-color: #105757;
 @media screen and (max-width: $tablet-breakpoint) {
   .base-page-container {
     .base-page {
-      padding: 32px 16px;
+      padding: $large-spacing $medium-spacing;
 
       .base-page-main {
         padding: 0;
         flex-direction: column;
 
         .base-page-content {
-          margin-bottom: 65px;
+          margin-bottom: $xlarge-spacing;
         }
       }
     }
