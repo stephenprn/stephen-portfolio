@@ -2,11 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap");
 @import "./constants.scss";
 
-$background-color: $color-primary;
-$background-color-secondary: #004949;
-
-$spotlight-size: 400px;
-$spotlight-color: #105757;
+$background-color: #0b1c1c;
+$background-color-third: #006c6c;
+$background-color-secondary: $color-primary;
 
 // base elements
 
@@ -17,36 +15,15 @@ body {
   overflow-x: hidden;
 
   background-color: $background-color;
-  background: linear-gradient(160deg, $background-color 0%, $background-color-secondary 100%) no-repeat center center
-    fixed;
+  background: linear-gradient(
+      160deg,
+      $background-color 0%,
+      $background-color-secondary 50%,
+      $background-color-third 100%
+    )
+    no-repeat center center fixed;
   background-size: auto 100vh;
   background-size: auto 120lvh;
-
-  .spotlight-mask {
-    position: fixed;
-    z-index: -1;
-
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    &::after {
-      content: "";
-      opacity: 0.2;
-
-      position: fixed;
-
-      height: $spotlight-size;
-      width: $spotlight-size;
-
-      background: radial-gradient(circle closest-side, $spotlight-color, transparent);
-      background-repeat: no-repeat;
-
-      left: calc(var(--mouse-x, -100%) - $spotlight-size / 2);
-      top: calc(var(--mouse-y, -100%) - $spotlight-size / 2);
-    }
-  }
 }
 
 * {
