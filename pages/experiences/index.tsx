@@ -12,9 +12,9 @@ const EXPERIENCES: IExperience[] = [
     role: "Co-fondateur",
     location: "Paris, France",
     summary: [
-      "Creation d'une plateforme from scratch qui permet d'inspirer et de trouver des destinations accessibles en train partout en France.",
+      "Création d'une plateforme from scratch qui permet d'inspirer et de trouver des destinations accessibles en train partout en France.",
       "Hoppio propose des itinéraires en fonction des envies de l'utilisateur (vélo, montagne, culture, plage,...).",
-      "Prise en charge de toute la partie technique du projet : développement back-end, front-end et mise en place de l'infrastructure,...",
+      "Prise en charge de toute la partie technique du projet : développement back-end, front-end et mise en place de l'infrastructure.",
     ],
     skills: [
       "React.js",

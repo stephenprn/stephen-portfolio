@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           <Link className="link" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
             Next.js
           </Link>{" "}
-          et herbergé chez{" "}
+          et hébergé chez{" "}
           <Link className="link" href="https://vercel.com/" target="_blank" rel="noopener noreferrer">
             Vercel
           </Link>

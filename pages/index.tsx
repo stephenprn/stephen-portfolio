@@ -11,7 +11,7 @@ const Home: React.FC = () => {
           Depuis 6 ans, je travaille sur des projets back-end et front-end en tant que <b>software engineer</b>.
         </p>
         <p>
-          Je peux intervenir sur des projets de différents typologies, tailles et durées. J&apos;ai eu l&apos;occasion
+          Je peux intervenir sur des projets de différentes typologies, tailles et durées. J&apos;ai eu l&apos;occasion
           de travailler pour des start-ups en France ainsi que pour des clients à l&apos;international.
         </p>
         <p>
