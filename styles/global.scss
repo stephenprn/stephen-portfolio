@@ -16,12 +16,11 @@ body {
 
   background-color: $background-color;
   background: linear-gradient(
-      160deg,
-      $background-color 0%,
-      $background-color-secondary 50%,
-      $background-color-third 100%
-    )
-    no-repeat center center fixed;
+    160deg,
+    $background-color 0%,
+    $background-color-secondary 50%,
+    $background-color-third 100%
+  );
   background-attachment: fixed;
   background-size: auto 100vh;
   background-size: auto 120lvh;
