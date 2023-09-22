@@ -85,12 +85,15 @@ $navigation-item-color: $color-white;
           margin-right: $medium-spacing;
         }
 
-        .navigation-item-separator {
-          margin-top: 4px;
-          transform: scaleX(0);
+        .navigation-link {
+          flex-direction: column-reverse;
 
-          transform-origin: center;
-          margin-right: 0;
+          .navigation-item-separator {
+            margin-top: 4px;
+
+            transform-origin: center;
+            margin-right: 0;
+          }
         }
       }
     }
