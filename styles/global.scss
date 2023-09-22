@@ -8,6 +8,11 @@ $background-color-secondary: $color-primary;
 
 // base elements
 
+html {
+  height: 100vh;
+  position: fixed;
+}
+
 html,
 body {
   scroll-behavior: smooth;
