@@ -36,12 +36,17 @@ $navigation-item-color: $color-white;
       }
 
       .navigation-link {
-        transition: letter-spacing $transition-duration $transition-timing-function;
-        font-size: 1rem;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 0;
-        color: $navigation-item-color;
+        display: flex;
+        align-items: center;
+
+        .navigation-link-title {
+          transition: letter-spacing $transition-duration $transition-timing-function;
+          font-size: 1rem;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 0;
+          color: $navigation-item-color;
+        }
       }
 
       &.active,
@@ -49,7 +54,9 @@ $navigation-item-color: $color-white;
         opacity: 1;
 
         .navigation-link {
-          letter-spacing: 0.1rem;
+          .navigation-link-title {
+            letter-spacing: 0.1rem;
+          }
         }
 
         .navigation-item-separator {

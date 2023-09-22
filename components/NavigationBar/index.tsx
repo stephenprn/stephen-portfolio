@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 const NAVIGATION_ITEMS = [
   { title: "À PROPOS", pathname: "/" },
-  { title: "EXPÉRIENCE", pathname: "/experiences" },
+  { title: "EXPÉRIENCES", pathname: "/experiences" },
   { title: "PROJETS", pathname: "/projects" },
 ] as const;
 
@@ -22,9 +22,9 @@ const NavigationBar: React.FC = () => {
               [classes["active"]]: currentPathname === pathname,
             })}
           >
-            <span className={classes["navigation-item-separator"]} />
-            <Link className={classes["navigation-link"]} href={pathname} showArrow={false}>
-              {title}
+            <Link href={pathname} showArrow={false} className={classes["navigation-link"]}>
+              <span className={classes["navigation-item-separator"]} />
+              <span className={classes["navigation-link-title"]}>{title}</span>
             </Link>
           </li>
         ))}
