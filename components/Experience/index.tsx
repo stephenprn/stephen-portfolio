@@ -5,6 +5,8 @@ import { format } from "date-fns";
 import Card, { CardProps } from "@/components/Card";
 import { Link } from "@/components/Link";
 
+const ICON_SIZE = "1rem";
+
 interface ExperienceDates {
   start: Date;
   end?: Date;
@@ -63,25 +65,23 @@ const Experience: React.FC<ExperienceProps> = ({
         <p className={classes.role}>{role}</p>
         <div className={classes["location-dates-container"]}>
           <p className={classes["location-date"]}>
-            <Icon name="location" className={classes["icon"]} height="1rem" width="1rem" /> {location}
+            <Icon name="location" className={classes["icon"]} height={ICON_SIZE} width={ICON_SIZE} /> {location}
           </p>
 
-          {dates ? (
-            <p className={classes["location-date"]}>
-              <Icon name="calendar" className={classes["icon"]} height="1rem" width="1rem" />{" "}
-              {format(dates.start, "MMM yyyy")} — {dates.end ? format(dates.end, "MMM yyyy") : "auj."}
-            </p>
-          ) : null}
+          <p className={classes["location-date"]}>
+            <Icon name="calendar" className={classes["icon"]} height={ICON_SIZE} width={ICON_SIZE} />{" "}
+            {format(dates.start, "MMM yyyy")} — {dates.end ? format(dates.end, "MMM yyyy") : "auj."}
+          </p>
         </div>
         <div className={classes["summary-container"]}>
-          {(summary || []).map((paragraph, index) => (
+          {summary.map((paragraph, index) => (
             <p key={index} className={classes["summary-paragraph"]}>
               {paragraph}
             </p>
           ))}
         </div>
         <ul className={classes.skills}>
-          {(skills || []).map((skill, index) => (
+          {skills.map((skill, index) => (
             <li key={index} className={classes.skill}>
               <div className={classes["skill-inner"]}>{skill}</div>
             </li>

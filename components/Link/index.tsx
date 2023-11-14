@@ -1,6 +1,6 @@
 import classes from "./index.module.scss";
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
-import { Icon } from "../Icon";
+import { Icon } from "@/components/Icon";
 import { AnchorHTMLAttributes } from "react";
 import clsx from "clsx";
 

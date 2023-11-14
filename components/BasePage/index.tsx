@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import classes from "./index.module.scss";
-import BasePageHeader from "../Header";
-import NavigationBar from "../NavigationBar";
-import Footer from "../Footer";
+import BasePageHeader from "@/components/Header";
+import NavigationBar from "@/components/NavigationBar";
+import Footer from "@/components/Footer";
 import { TABLET_BREAKPOINT } from "@/constants";
 
 interface BasePageProps {

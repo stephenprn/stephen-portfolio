@@ -1,20 +1,22 @@
 import React from "react";
-import { MaltIcon } from "./social/MaltIcon";
-import { GithubIcon } from "./social/GithubIcon";
-import { LinkedinIcon } from "./social/LinkedinIcon";
-import { LocationIcon } from "./symbol/LocationIcon";
-import { CalendarIcon } from "./symbol/CalendarIcon";
-import { ArrowTopRightIcon } from "./symbol/ArrowTopRightIcon";
-import { AndroidIcon } from "./symbol/AndroidIcon";
-import { MailIcon } from "./symbol/MailIcon";
-import { WebIcon } from "./symbol/WebIcon";
-import { ChevronTopIcon } from "./symbol/ChevronTopIcon";
-import { StudentIcon } from "./symbol/StudentIcon";
+import { MaltIcon } from "@/components/Icon/social/MaltIcon";
+import { GithubIcon } from "@/components/Icon/social/GithubIcon";
+import { LinkedinIcon } from "@/components/Icon/social/LinkedinIcon";
+import { LocationIcon } from "@/components/Icon/symbol/LocationIcon";
+import { CalendarIcon } from "@/components/Icon/symbol/CalendarIcon";
+import { ArrowTopRightIcon } from "@/components/Icon/symbol/ArrowTopRightIcon";
+import { AndroidIcon } from "@/components/Icon/symbol/AndroidIcon";
+import { MailIcon } from "@/components/Icon/symbol/MailIcon";
+import { WebIcon } from "@/components/Icon/symbol/WebIcon";
+import { ChevronTopIcon } from "@/components/Icon/symbol/ChevronTopIcon";
+import { StudentIcon } from "@/components/Icon/symbol/StudentIcon";
+import { CVIcon } from "@/components/Icon/social/CVIcon";
 
 const ICONS = {
   malt: MaltIcon,
   github: GithubIcon,
   linkedin: LinkedinIcon,
+  CV: CVIcon,
 
   location: LocationIcon,
   calendar: CalendarIcon,

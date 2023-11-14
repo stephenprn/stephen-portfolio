@@ -1,4 +1,4 @@
-import { Icon } from "../Icon";
+import { Icon } from "@/components/Icon";
 import { Link } from "@/components/Link";
 import classes from "./index.module.scss";
 import { usePathname } from "next/navigation";

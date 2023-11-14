@@ -1,14 +1,13 @@
 import classes from "./index.module.scss";
 import { useState } from "react";
-import BasePage from "../../components/BasePage";
-import Project, { IProject } from "./project";
+import BasePage from "@/components/BasePage";
 import optimumImage from "@/assets/projects/optimum.png";
 import objectifsImage from "@/assets/projects/mes_objectifs.png";
 import hoppioImage from "@/assets/projects/hoppio.png";
-import { Icon } from "@/components/Icon";
 import CardsContainer from "@/components/CardsContainer";
-import { CARD_CONTAINER_CLASSNAME } from "../../constants";
 import { Link } from "@/components/Link";
+import Project, { IProject } from "@/components/Project";
+import { CARD_CONTAINER_CLASSNAME } from "@/constants";
 
 const PROJECTS: IProject[] = [
   {

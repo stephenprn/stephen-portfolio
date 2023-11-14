@@ -1,9 +1,13 @@
 import { useState } from "react";
-import BasePage from "../../components/BasePage";
 import classes from "./index.module.scss";
-import Experience, { IExperience } from "./experience";
 import CardsContainer from "@/components/CardsContainer";
-import { CARD_CONTAINER_CLASSNAME } from "../../constants";
+import Experience, { IExperience } from "@/components/Experience";
+import BasePage from "@/components/BasePage";
+import { CARD_CONTAINER_CLASSNAME } from "@/constants";
+import NextLink from "next/link";
+import { Icon } from "@/components/Icon";
+
+const ARROW_ICON_SIZE = "1.2rem";
 
 const EXPERIENCES: IExperience[] = [
   {
@@ -176,6 +180,19 @@ const Experiences: React.FC = () => {
           ))}
         </CardsContainer>
       </div>
+
+      <div className={classes["view-resume-link-container"]}>
+        <NextLink className={classes["view-resume-link"]} href="/CV-stephen_perrin.pdf">
+          Voir le CV complet
+          <Icon
+            className={classes["view-resume-link-arrow"]}
+            name="arrowTopRight"
+            height={ARROW_ICON_SIZE}
+            width={ARROW_ICON_SIZE}
+          />
+        </NextLink>
+      </div>
+
       <div className={classes.education}>
         <CardsContainer setIndexHighlighted={setIndexHighlighted}>
           {EDUCATIONS.map((experience, index) => (

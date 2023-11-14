@@ -68,7 +68,7 @@ const Project: React.FC<ProjectProps> = ({ title, description, link, image, high
             </p>
           ) : null}
           <div className={classes["project-description-container"]}>
-            {(description || []).map((paragraph, index) => (
+            {description.map((paragraph, index) => (
               <p className={classes["project-description-paragraph"]} key={index}>
                 {paragraph}
               </p>

@@ -1,7 +1,5 @@
-import classes from "./index.module.scss";
-import BasePage from "../components/BasePage";
+import BasePage from "@/components/BasePage";
 import { Link } from "@/components/Link";
-import { Icon } from "@/components/Icon";
 
 const Home: React.FC = () => {
   return (

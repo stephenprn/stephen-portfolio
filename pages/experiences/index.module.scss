@@ -1,4 +1,4 @@
-@import "../../styles/constants.scss";
+@import "@/styles/constants.scss";
 
 .experiences,
 .education {
@@ -7,4 +7,62 @@
 
 .education {
   margin-top: $large-spacing;
+}
+
+.view-resume-link-container {
+  margin-top: $medium-spacing;
+
+  .view-resume-link {
+    position: relative;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      opacity: 0;
+      transform: scaleX(10%);
+      transform-origin: left;
+
+      height: 1px;
+
+      left: 0;
+      right: calc(1.2rem + $small-spacing);
+      bottom: calc(-1 * $small-spacing);
+
+      background: $color-accent;
+
+      transition:
+        opacity $transition-duration $transition-timing-function,
+        transform $transition-duration $transition-timing-function;
+    }
+
+    .view-resume-link-arrow {
+      margin-left: $small-spacing;
+
+      transition: transform $transition-duration $transition-timing-function;
+      transform: translate(-25%, 25%);
+
+      path {
+        transition: fill $transition-duration $transition-timing-function;
+      }
+    }
+
+    &:hover {
+      &::after {
+        transform: scaleX(100%);
+        opacity: 1;
+      }
+
+      .view-resume-link-arrow {
+        transform: translate(0, 0);
+
+        path {
+          fill: $color-accent;
+        }
+      }
+    }
+  }
 }
