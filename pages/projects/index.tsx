@@ -2,6 +2,7 @@ import classes from "./index.module.scss";
 import { useState } from "react";
 import BasePage from "@/components/BasePage";
 import optimumImage from "@/assets/projects/optimum.png";
+import dicoQuizImage from "@/assets/projects/dicoquiz.png";
 import objectifsImage from "@/assets/projects/mes_objectifs.png";
 import hoppioImage from "@/assets/projects/hoppio.png";
 import CardsContainer from "@/components/CardsContainer";
@@ -19,6 +20,16 @@ const PROJECTS: IProject[] = [
     link: "https://hoppio.fr/",
     type: "web",
     image: hoppioImage,
+  },
+  {
+    title: "DicoQuiz",
+    description: [
+      "Application mobile pour apprendre une nouvelle langue.",
+      "Création de dictionnaires personnalisés et test de connaissances avec des quizzes",
+    ],
+    link: "https://play.google.com/store/apps/details?id=com.stephenprn.dicoquiz",
+    type: "android",
+    image: dicoQuizImage,
   },
   {
     title: "Optimum",
