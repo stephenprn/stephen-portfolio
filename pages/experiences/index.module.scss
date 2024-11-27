@@ -51,6 +51,8 @@
     }
 
     &:hover {
+      color: $color-accent;
+
       &::after {
         transform: scaleX(100%);
         opacity: 1;

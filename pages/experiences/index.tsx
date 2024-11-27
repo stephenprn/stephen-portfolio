@@ -11,6 +11,20 @@ const ARROW_ICON_SIZE = "1.2rem";
 
 const EXPERIENCES: IExperience[] = [
   {
+    title: "Aigle",
+    link: "https://beta.gouv.fr/startups/aigle.html",
+    role: "Responsable développement web et infrastructure",
+    location: "Paris, France",
+    summary: [
+      "Développement et gestion de l'infrastructure de la plateforme Aigle, actuellement en phase de refonte.",
+      "La plateforme Aigle est un outil qui a pour but de faciliter la détection des constructions ou installations illégales pour préserver les espaces agricoles, naturels et forestiers.",
+    ],
+    skills: ["React.js", "Typescript", "SASS", "Python 3", "Django", "PostgreSQL", "Postgis", "Scalingo", "Docker"],
+    dates: {
+      start: new Date("2024-01-15"),
+    },
+  },
+  {
     title: "Hoppio",
     link: "https://hoppio.fr",
     role: "Co-fondateur",
@@ -23,6 +37,7 @@ const EXPERIENCES: IExperience[] = [
     skills: ["React.js", "Typescript", "SASS", "Python 3", "Django", "Redis", "PostgreSQL", "OVH", "Docker"],
     dates: {
       start: new Date("2023-04-01"),
+      end: new Date("2023-12-31"),
     },
   },
   {
