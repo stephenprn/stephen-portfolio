@@ -12,21 +12,21 @@ const ARROW_ICON_SIZE = "1.2rem";
 const EXPERIENCES: IExperience[] = [
   {
     title: "Aigle",
-    link: "https://beta.gouv.fr/startups/aigle.html",
+    link: "https://aigle.beta.gouv.fr/#/accueil",
     role: "Responsable développement web et infrastructure",
     location: "Paris, France",
     summary: [
       "Développement et gestion de l'infrastructure de la plateforme Aigle, actuellement en phase de refonte.",
       "La plateforme Aigle est un outil qui a pour but de faciliter la détection des constructions ou installations illégales pour préserver les espaces agricoles, naturels et forestiers.",
     ],
-    skills: ["React.js", "Typescript", "SASS", "Python 3", "Django", "PostgreSQL", "Postgis", "Scalingo", "Docker"],
+    skills: ["React.js", "Typescript", "SASS", "Python 3", "Django", "PostgreSQL", "Postgis", "Scaleway", "Docker"],
     dates: {
       start: new Date("2024-01-15"),
     },
   },
   {
     title: "Hoppio",
-    link: "https://hoppio.fr",
+    link: "https://www.linkedin.com/company/hoppio-fr/",
     role: "Co-fondateur",
     location: "Paris, France",
     summary: [
@@ -183,18 +183,6 @@ const Experiences: React.FC = () => {
             </div>
           ))}
         </CardsContainer>
-      </div>
-
-      <div className={classes["view-resume-link-container"]}>
-        <NextLink className={classes["view-resume-link"]} href="/CV-stephen_perrin.pdf">
-          Voir le CV complet
-          <Icon
-            className={classes["view-resume-link-arrow"]}
-            name="arrowTopRight"
-            height={ARROW_ICON_SIZE}
-            width={ARROW_ICON_SIZE}
-          />
-        </NextLink>
       </div>
 
       <div className={classes.education}>

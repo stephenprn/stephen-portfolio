@@ -1,6 +1,7 @@
 import classes from "./index.module.scss";
 import { useState } from "react";
 import BasePage from "@/components/BasePage";
+import toBeClothesImage from "@/assets/projects/tobeclothes.webp";
 import optimumImage from "@/assets/projects/optimum.png";
 import dicoQuizImage from "@/assets/projects/dicoquiz.png";
 import objectifsImage from "@/assets/projects/mes_objectifs.png";
@@ -12,12 +13,22 @@ import { CARD_CONTAINER_CLASSNAME } from "@/constants";
 
 const PROJECTS: IProject[] = [
   {
+    title: "To Be Clothes",
+    link: "https://apps.apple.com/fr/app/to-be-clothes/id6740776697",
+    description: [
+      "Plateforme conviviale pour organiser des vide-dressings entre mamans dans votre quartier.",
+      "To Be Clothes transforme la vente de vêtements de seconde main en moments de partage authentiques et responsables.",
+    ],
+    type: "ios",
+    image: toBeClothesImage,
+  },
+  {
     title: "Hoppio",
     description: [
       "Plateforme inspirationnelle pour trouver des destinations accessibles en train partout en France.",
       "Hoppio vous propose des itinéraires en fonction de vos envies (vélo, montagne, culture, plage,...).",
     ],
-    link: "https://hoppio.fr/",
+    link: "https://www.linkedin.com/company/hoppio-fr/",
     type: "web",
     image: hoppioImage,
   },

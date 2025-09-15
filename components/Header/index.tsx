@@ -1,6 +1,6 @@
 import classes from "./index.module.scss";
 import Image from "next/image";
-import stephenImage from "assets/stephen.png";
+import stephenImage from "@/assets/stephen.png";
 import { Icon, IconName } from "@/components/Icon";
 import { Link } from "@/components/Link";
 
@@ -16,10 +16,6 @@ const SOCIAL_ITEMS: { name: IconName; link: string }[] = [
   {
     name: "linkedin",
     link: "https://www.linkedin.com/in/stephen-perrin/",
-  },
-  {
-    name: "CV",
-    link: "/CV-stephen_perrin.pdf",
   },
   {
     name: "mail",

@@ -15,6 +15,10 @@ const PROJECT_TYPES_MAP: {
     icon: "android",
     label: "Application Android",
   },
+  ios: {
+    icon: "ios",
+    label: "Application iOS",
+  },
   web: {
     icon: "web",
     label: "Site web",
@@ -26,7 +30,7 @@ export interface IProject {
   description: string[];
   image: StaticImageData;
   link?: string;
-  type?: "android" | "web";
+  type?: "android" | "web" | "ios";
 }
 
 interface ProjectProps extends IProject, CardProps {}
@@ -39,7 +43,7 @@ const Project: React.FC<ProjectProps> = ({ title, description, link, image, high
           <Image
             className={clsx(classes["project-image"], {
               [classes["active"]]: highlighted,
-              [classes["android"]]: type === "android",
+              [classes["app"]]: type === "android" || type === "ios",
             })}
             src={image}
             alt={`${title} image`}

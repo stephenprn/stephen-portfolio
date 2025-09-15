@@ -10,37 +10,40 @@ const Home: React.FC = () => {
     <BasePage>
       <div className="paragraphs-group">
         <p>
-          Depuis <b>{DEV_START_YEARS_AGO} ans</b>, je travaille sur des projets back-end et front-end en tant que{" "}
-          <b>software engineer</b>.
+          <b>Développeur lead/senior full-stack</b> avec {DEV_START_YEARS_AGO} années d&apos;expérience couvrant le{" "}
+          <b>développement</b> (Python, React, TypeScript), le <b>DevOps/déploiement</b> (Docker, infrastructure) et{" "}
+          l&apos;<b>analyse de données</b>. J&apos;accompagne start-ups et entreprises dans la conception de solutions
+          complètes, de la donnée à la production.
         </p>
         <p>
           Je peux intervenir sur des projets de différentes typologies, tailles et durées. J&apos;ai eu l&apos;occasion
           de travailler pour des start-ups en France ainsi que pour des clients à l&apos;international.
         </p>
         <p>
-          En parallèle de mon activité professionnelle, j&apos;ai consacré du temps pour développer et lancer deux
+          En parallèle de mon activité professionnelle, j&apos;ai consacré du temps pour développer et lancer des
           applications mobiles <Link href="/projects">disponibles ici</Link>.
         </p>
         <p>
-          En 2023, j&apos;ai décidé de me lancer dans l&apos;<b>entrepreunariat</b>. Avec mon associée, nous avons lancé
-          le plateforme{" "}
-          <Link href="https://hoppio.fr/" target="_blank" rel="noopener noreferrer">
+          En 2023, j&apos;ai décidé de me lancer dans l&apos;<b>entrepreneuriat</b>. Avec mon associée, nous avons lancé
+          la plateforme{" "}
+          <Link href="https://www.linkedin.com/company/hoppio-fr/" target="_blank" rel="noopener noreferrer">
             Hoppio
           </Link>
           . Sur ce projet, je prends en charge le développement front-end, back-end et la gestion de
           l&apos;infrastructure.
         </p>
         <p>
-          En janvier 2024, je suis devenu freelance en rejoignant la startup d&apos;état{" "}
-          <Link href="https://beta.gouv.fr/startups/aigle.html" target="_blank" rel="noopener noreferrer">
+          Depuis janvier 2024, je développe l&apos;intégralité de l&apos;application de la startup d&apos;État{" "}
+          <Link href="https://aigle.beta.gouv.fr/#/accueil" target="_blank" rel="noopener noreferrer">
             Aigle
           </Link>{" "}
-          qui développe un outil d&apos;aide à la détection des constructions illégales{" "}
-          <b>pour préserver les espaces agricoles, naturels et forestiers.</b>
+          : architecture front-end, back-end, infrastructure et pipelines de données, entièrement conçue from scratch.
+          Ce projet <Link href="https://github.com/MTES-MCT?q=aigle">open-source</Link> aide à la détection des
+          constructions illégales pour préserver les espaces naturels.
         </p>
         <p>
-          J&apos;accorde une grande importance au <b>clean code</b> qui permet une bonne maintenabilité et surtout une
-          expérience optimale pour l&apos;utilisateur final.
+          Mon approche privilégie le <b>clean code</b>, l&apos;architecture scalable et l&apos;expérience utilisateur,
+          pour des solutions robustes et maintenables.
         </p>
       </div>
     </BasePage>

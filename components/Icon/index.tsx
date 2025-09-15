@@ -10,18 +10,18 @@ import { MailIcon } from "@/components/Icon/symbol/MailIcon";
 import { WebIcon } from "@/components/Icon/symbol/WebIcon";
 import { ChevronTopIcon } from "@/components/Icon/symbol/ChevronTopIcon";
 import { StudentIcon } from "@/components/Icon/symbol/StudentIcon";
-import { CVIcon } from "@/components/Icon/social/CVIcon";
+import { IOsIcon } from "@/components/Icon/symbol/IOsIcon";
 
 const ICONS = {
   malt: MaltIcon,
   github: GithubIcon,
   linkedin: LinkedinIcon,
-  CV: CVIcon,
 
   location: LocationIcon,
   calendar: CalendarIcon,
   arrowTopRight: ArrowTopRightIcon,
   android: AndroidIcon,
+  ios: IOsIcon,
   mail: MailIcon,
   web: WebIcon,
   chevronTop: ChevronTopIcon,
