@@ -16,8 +16,8 @@ const EXPERIENCES: IExperience[] = [
     role: "Responsable développement web et infrastructure",
     location: "Paris, France",
     summary: [
-      "Développement et gestion de l'infrastructure de la plateforme Aigle, actuellement en phase de refonte.",
-      "La plateforme Aigle est un outil qui a pour but de faciliter la détection des constructions ou installations illégales pour préserver les espaces agricoles, naturels et forestiers.",
+      "Conception et développement from scratch de l'architecture complète de la plateforme Aigle (front-end, back-end, infrastructure, pipelines de données), désormais en production.",
+      "Aigle est une plateforme open-source qui aide les services de l'État à détecter les constructions illégales pour préserver les espaces naturels.",
     ],
     skills: ["React.js", "Typescript", "SASS", "Python 3", "Django", "PostgreSQL", "Postgis", "Scaleway", "Docker"],
     dates: {
